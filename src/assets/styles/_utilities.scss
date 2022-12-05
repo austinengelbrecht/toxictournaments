@@ -1,20 +1,5 @@
 @import "colors";
 
-.hidden {
-  display: none;
-}
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 $colorscheme: (
   "toxic": (
     1: $toxic-1,
@@ -57,4 +42,19 @@ $colorscheme: (
 
 .bg {
   @include color-modifiers(background-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
 }
