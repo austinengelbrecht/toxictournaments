@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import Test from "../components/Test.vue";
+</script>
 
 <template>
-  <main>Test Body</main>
+  <main>
+    <Test />
+  </main>
 </template>

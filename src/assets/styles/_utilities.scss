@@ -1,3 +1,49 @@
+@import "colors";
+
+$colorscheme: (
+  "toxic": (
+    1: $toxic-1,
+    2: $toxic-2,
+    base: $toxic-3,
+    4: $toxic-4,
+    5: $toxic-5,
+  ),
+  "poison": (
+    1: $poison-1,
+    2: $poison-2,
+    base: $poison-3,
+    4: $poison-4,
+    5: $poison-5,
+  ),
+  "onyx": (
+    1: $onyx-1,
+    2: $onyx-2,
+    3: $onyx-3,
+  ),
+);
+
+// Color Modifier - used to access the colorscheme map
+@mixin color-modifiers(
+  $attribute: "",
+  $prefix: "-",
+  $separator: "-",
+  $base: "base"
+) {
+  @each $name, $color in $colorscheme {
+    &#{$prefix}#{$name} {
+      @each $tone, $hex in $color {
+        &#{if($tone != $base, #{$separator}#{$tone}, '')} {
+          #{$attribute}: $hex;
+        }
+      }
+    }
+  }
+}
+
+.bg {
+  @include color-modifiers(background-color);
+}
+
 .hidden {
   display: none;
 }
