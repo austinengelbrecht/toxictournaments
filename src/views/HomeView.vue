@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import Test from "../components/Test.vue";
+</script>
 
 <template>
   <main>
-    <div class="bg-onyx-2">Test body</div>
+    <Test />
   </main>
 </template>
