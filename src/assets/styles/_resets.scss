@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+a {
+  all: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    border: #0000d1 2px solid;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    border: #0000d1 2px solid;
+  }
+}
