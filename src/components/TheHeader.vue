@@ -1,6 +1,9 @@
 <template>
-  <div class="nav bg-onyx-3">
-    <ToxicLogo class="nav-logo" />
+  <div class="navbar bg-onyx-2">
+    <router-link to="/home" class="navbar-home">
+      <ToxicLogo class="navbar-home-logo" />
+      <h1>Toxic Tounaments</h1>
+    </router-link>
   </div>
 </template>
 
@@ -18,10 +21,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav {
-  &-logo {
-    height: 100px;
-    width: auto;
+.navbar {
+  height: 100px;
+
+  &-home {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-grow: 1;
+
+    &-logo {
+      height: 100px;
+      width: auto;
+    }
   }
 }
 </style>
