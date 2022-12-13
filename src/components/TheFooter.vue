@@ -5,14 +5,18 @@
       <h2 class="footer-home-title">Toxic Tournaments</h2>
     </router-link>
 
-    <ul>
-      <li v-for="link in socialLinks">
+    <ul class="socials">
+      <li v-for="link in socialLinks" class="socials-links">
         <a :key="link.url" :href="link.url" target="_blank">
           <Icon :icon="link.icon" class="icon" />
           <span class="sr-only">{{ link.linkText }}</span>
         </a>
       </li>
     </ul>
+
+    <div class="footer-copyright">
+      <span>&copy; Toxic Tournaments 2022</span>
+    </div>
   </div>
 </template>
 
@@ -23,6 +27,7 @@ import { Icon } from "@iconify/vue";
 export default {
   components: {
     ToxicLogo,
+    Icon,
   },
   data() {
     return {
@@ -30,22 +35,32 @@ export default {
         {
           url: "#",
           linkText: "Goto our YouTube",
-          icon: "fa:github",
+          icon: "mdi:youtube",
+        },
+        {
+          url: "#",
+          linkText: "Goto our Twitch",
+          icon: "mdi:twitch",
+        },
+        {
+          url: "#",
+          linkText: "Goto our Facebook",
+          icon: "mdi:facebook",
         },
         {
           url: "#",
           linkText: "Goto our Twitter",
-          icon: "fa:linkedin",
+          icon: "mdi:twitter",
         },
         {
           url: "#",
-          linkText: "Goto our Twitter",
-          icon: "fa:linkedin",
+          linkText: "Goto our Instagram",
+          icon: "mdi:instagram",
         },
         {
-          url: "#",
-          linkText: "Goto our Twitter",
-          icon: "fa:linkedin",
+          url: "https://www.tiktok.com/t/ZTRVDRaoj/",
+          linkText: "Goto our TikTok",
+          icon: "ic:baseline-tiktok",
         },
       ],
     };
@@ -72,5 +87,26 @@ export default {
       margin: 0;
     }
   }
+
+  &-copyright {
+    margin-top: 4rem;
+    text-align: center;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &-links {
+    padding: 0 1rem;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
 }
 </style>
