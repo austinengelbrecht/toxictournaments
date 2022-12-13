@@ -9,6 +9,7 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
+    { path: "/:notFound(.*)", redirect: "/home" },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
