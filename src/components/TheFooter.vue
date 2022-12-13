@@ -15,7 +15,7 @@
     </ul>
 
     <div class="footer-copyright">
-      <span>&copy; Toxic Tournaments 2022</span>
+      <span>&copy;2022 Toxic Tournaments</span>
     </div>
   </div>
 </template>
