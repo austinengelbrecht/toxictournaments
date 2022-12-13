@@ -71,6 +71,13 @@ export default {
 <style lang="scss" scoped>
 .footer {
   padding: 2rem;
+  color: #8a8887;
+
+  a {
+    &:hover {
+      color: $off-white;
+    }
+  }
 
   &-home {
     display: flex;
