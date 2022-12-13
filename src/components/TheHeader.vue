@@ -1,9 +1,13 @@
 <template>
-  <div class="navbar bg-onyx-2">
+  <div class="navbar bg-onyx-3">
     <router-link to="/home" class="navbar-home">
       <ToxicLogo class="navbar-home-logo" />
-      <h1>Toxic Tounaments</h1>
+      <h1>Toxic Tournaments</h1>
     </router-link>
+
+    <ul>
+      <li></li>
+    </ul>
   </div>
 </template>
 
@@ -31,8 +35,8 @@ export default {
     flex-grow: 1;
 
     &-logo {
-      height: 100px;
-      width: auto;
+      width: 100px;
+      height: auto;
     }
   }
 }
