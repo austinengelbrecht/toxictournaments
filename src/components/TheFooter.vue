@@ -98,7 +98,7 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
   &-links {
     padding: 0 1rem;
@@ -106,7 +106,7 @@ export default {
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 </style>
