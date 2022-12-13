@@ -15,3 +15,9 @@ import TheFooter from "./components/TheFooter.vue";
     <TheFooter />
   </footer>
 </template>
+
+<style lang="scss">
+.hidden {
+  display: none;
+}
+</style>
