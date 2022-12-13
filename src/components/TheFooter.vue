@@ -58,7 +58,7 @@ export default {
           icon: "mdi:instagram",
         },
         {
-          url: "https://www.tiktok.com/t/ZTRVDRaoj/",
+          url: "https://www.tiktok.com/@toxic_tournaments",
           linkText: "Goto our TikTok",
           icon: "ic:baseline-tiktok",
         },
