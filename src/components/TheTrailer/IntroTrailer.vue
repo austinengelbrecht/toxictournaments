@@ -1,6 +1,10 @@
 <template>
   <trailer-background>
     <YoutubeTrailer />
+
+    <div>
+      <h2>Are We Toxic?</h2>
+    </div>
   </trailer-background>
 </template>
 

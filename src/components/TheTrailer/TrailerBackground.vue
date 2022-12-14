@@ -7,8 +7,9 @@
 <style>
 .background {
   padding: 1rem;
+  margin: 2rem 0;
   width: 100%;
 
-  background: linear-gradient(90deg, #600e8c, #2a2a2a 15% 85%, #600e8c);
+  background: linear-gradient(90deg, #3d0959, #2a2a2a 30% 70%, #3d0959);
 }
 </style>
