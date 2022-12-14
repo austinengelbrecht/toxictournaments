@@ -4,7 +4,14 @@
 
     <div class="trailer-text">
       <h2>Are We Toxic?</h2>
-      <p>Add some text here or something</p>
+      <p>
+        We all have our moments, but who doesn't like a little bit a light
+        jabbing back and forth with their friends? We started Toxic Tournaments
+        with this in mind. Orginally started by a group of friends who wanted to
+        get together and play video games; Toxic Tournaments has slowly grown
+        into hosting open tournaments to share the love and frustration of video
+        games.
+      </p>
       <a href="#">Then probably a button here</a>
     </div>
   </section>
@@ -34,6 +41,7 @@ export default {
   &-text {
     display: flex;
     flex-flow: column nowrap;
+    max-width: 500px;
   }
 }
 </style>
