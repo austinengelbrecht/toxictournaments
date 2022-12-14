@@ -33,27 +33,22 @@ export default {
     return {
       socialLinks: [
         {
-          url: "#",
+          url: "https://www.youtube.com/channel/UC_u9_sjl2Q82zTK7WZwVr2A",
           linkText: "Goto our YouTube",
           icon: "mdi:youtube",
         },
+        // {
+        //   url: "#",
+        //   linkText: "Goto our Twitch",
+        //   icon: "mdi:twitch",
+        // },
         {
-          url: "#",
-          linkText: "Goto our Twitch",
-          icon: "mdi:twitch",
-        },
-        {
-          url: "#",
+          url: "https://www.facebook.com/ToxicTournamentsYT/",
           linkText: "Goto our Facebook",
           icon: "mdi:facebook",
         },
         {
-          url: "#",
-          linkText: "Goto our Twitter",
-          icon: "mdi:twitter",
-        },
-        {
-          url: "#",
+          url: "https://www.instagram.com/toxictournaments/",
           linkText: "Goto our Instagram",
           icon: "mdi:instagram",
         },
