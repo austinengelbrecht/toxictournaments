@@ -4,11 +4,8 @@ import HomeView from "../views/HomeView.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    {
-      path: "/home",
-      name: "home",
-      component: HomeView,
-    },
+    { path: "/", name: "home", component: HomeView },
+    { path: "/home", name: "home", component: HomeView },
     { path: "/:notFound(.*)", redirect: "/home" },
   ],
   scrollBehavior(to, from, savedPosition) {
