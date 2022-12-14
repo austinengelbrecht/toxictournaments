@@ -1,9 +1,9 @@
 <script setup>
-import Test from "../components/Test.vue";
+import IntroTrailer from "../components/TheTrailer/IntroTrailer.vue";
 </script>
 
 <template>
   <main>
-    <Test />
+    <IntroTrailer />
   </main>
 </template>
