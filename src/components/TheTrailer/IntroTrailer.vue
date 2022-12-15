@@ -1,10 +1,10 @@
 <template>
   <section class="trailer bg-onyx-2">
-    <YoutubeTrailer />
+    <YoutubeTrailer class="trailer-video" />
 
-    <div class="trailer-text">
-      <h2>Are We Toxic?</h2>
-      <p>
+    <div class="trailer-intro">
+      <h2 class="trailer-intro-heading">Are We Toxic?</h2>
+      <p class="trailer-intro-text">
         We all have our moments, but who doesn't like a little bit a light
         jabbing back and forth with their friends? We started Toxic Tournaments
         with this in mind. Orginally started by a group of friends who wanted to
@@ -34,14 +34,30 @@ export default {
 .trailer {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
   padding: 1rem;
   margin: 2rem 0;
   // background: linear-gradient(-30deg, #3d0959, #2a2a2a 25% 75%, #3d0959);
 
-  &-text {
+  &-video {
+    max-width: 560px;
+    height: 315px;
+  }
+
+  &-intro {
     display: flex;
     flex-flow: column nowrap;
-    max-width: 500px;
+    max-width: 560px;
+
+    &-heading {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    &-text {
+      font-size: 1.15rem;
+    }
   }
 }
 </style>
