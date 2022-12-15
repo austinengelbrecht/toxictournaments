@@ -1,5 +1,5 @@
 <template>
-  <section class="trailer bg-onyx-2">
+  <section class="trailer">
     <YoutubeTrailer class="trailer-video" />
 
     <div class="trailer-intro">
@@ -40,7 +40,12 @@ export default {
   gap: 2rem;
   padding: 1rem;
   margin: 2rem 0;
-  // background: linear-gradient(-30deg, #3d0959, #2a2a2a 25% 75%, #3d0959);
+  background: linear-gradient(
+    -40deg,
+    $poison-transition,
+    $onyx-3 20% 80%,
+    $poison-transition
+  );
 
   &-video {
     max-width: 560px;

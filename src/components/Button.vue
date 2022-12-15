@@ -25,9 +25,9 @@ export default {
   background-color: $black;
 
   &:hover {
-    background-color: $onyx-3;
+    background-color: $onyx-2;
     border-color: $poison-1;
-    transition: 0.25s;
+    transition: 0.5s ease-in-out;
   }
 
   &-text {
