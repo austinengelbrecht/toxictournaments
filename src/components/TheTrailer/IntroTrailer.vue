@@ -12,17 +12,19 @@
         into hosting open tournaments to share the love and frustration of video
         games.
       </p>
-      <a href="#">Then probably a button here</a>
+      <Button :goto="'#'" :text="'Learn More'" />
     </div>
   </section>
 </template>
 
 <script>
 import YoutubeTrailer from "./YoutubeTrailer.vue";
+import Button from "../Button.vue";
 
 export default {
   components: {
     YoutubeTrailer,
+    Button,
   },
   data() {
     return {};
