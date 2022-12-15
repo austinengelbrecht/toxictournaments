@@ -17,7 +17,7 @@ export default {
 .button {
   position: relative;
   padding: 1rem 2rem;
-  max-width: 25%;
+  max-width: 30%;
 
   border: 2px solid $poison-3;
   border-radius: 8px;
