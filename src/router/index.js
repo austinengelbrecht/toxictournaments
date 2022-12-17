@@ -4,7 +4,7 @@ import HomeView from "../views/HomeView.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: "/", redirect: "home" },
+    { path: "/", redirect: "/home" },
     { path: "/home", component: HomeView },
     { path: "/:notFound(.*)", redirect: "/home" },
   ],
