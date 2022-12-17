@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: "/", redirect: "home" },
-    { path: "/home", name: "home", component: HomeView },
+    { path: "/home", component: HomeView },
     { path: "/:notFound(.*)", redirect: "/home" },
   ],
   scrollBehavior(to, from, savedPosition) {
