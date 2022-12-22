@@ -39,7 +39,7 @@ export default {
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   background: linear-gradient(
     -40deg,
     $poison-transition,
