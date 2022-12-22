@@ -24,12 +24,6 @@ export default {
 
   background-color: $black;
 
-  // &:hover {
-  //   background-color: $onyx-2;
-  //   border-color: $poison-1;
-  //   transition: 0.5s ease-in-out;
-  // }
-
   &-text {
     text-align: center;
     margin: auto;
@@ -78,7 +72,7 @@ export default {
 }
 
 .glow-on-hover:active:after {
-  background: transparent;
+  background: #3a3a3a;
 }
 
 .glow-on-hover:hover:before {
@@ -91,7 +85,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: #1a1a1a;
   left: 0;
   top: 0;
   border-radius: 10px;
