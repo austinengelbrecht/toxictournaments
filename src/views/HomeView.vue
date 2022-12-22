@@ -1,11 +1,11 @@
 <script setup>
-import IntroHeader from "../components/TheIntro/IntroHeader.vue";
+import IntroHero from "../components/TheIntro/IntroHero.vue";
 import IntroTrailer from "../components/TheTrailer/IntroTrailer.vue";
 </script>
 
 <template>
   <main>
-    <IntroHeader />
+    <IntroHero />
     <IntroTrailer />
   </main>
 </template>
