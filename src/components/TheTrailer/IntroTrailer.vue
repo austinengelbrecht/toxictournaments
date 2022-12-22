@@ -38,8 +38,8 @@ export default {
   flex-flow: row wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
-  margin: 2rem 0;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
   background: linear-gradient(
     -40deg,
     $poison-transition,
@@ -58,12 +58,12 @@ export default {
     max-width: 560px;
 
     &-heading {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
     }
 
     &-text {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
     }
   }
 }
