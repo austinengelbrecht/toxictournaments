@@ -63,7 +63,7 @@ export default {
     }
 
     &-text {
-      font-size: 1.15rem;
+      font-size: 1.25rem;
     }
   }
 }
