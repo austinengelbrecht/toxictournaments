@@ -38,12 +38,7 @@ export default {
 }
 
 .glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
+  background: #000;
   cursor: pointer;
   position: relative;
   z-index: 0;
