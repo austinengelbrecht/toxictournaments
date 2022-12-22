@@ -38,7 +38,7 @@ export default {
   flex-flow: row wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin-bottom: 2rem;
   background: linear-gradient(
     -40deg,
@@ -58,7 +58,7 @@ export default {
     max-width: 560px;
 
     &-heading {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
     }
 

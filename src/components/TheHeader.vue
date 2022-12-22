@@ -2,7 +2,7 @@
   <div class="navbar bg-onyx-3">
     <router-link to="/home" class="navbar-home">
       <ToxicLogo class="navbar-home-logo" />
-      <h1>Toxic Tournaments</h1>
+      <h1 class="navbar-home-title">Toxic Tournaments</h1>
     </router-link>
   </div>
 </template>
@@ -33,6 +33,12 @@ export default {
     &-logo {
       width: 100px;
       height: auto;
+    }
+
+    &-title {
+      @media (max-width: 800px) {
+        display: none;
+      }
     }
   }
 }
