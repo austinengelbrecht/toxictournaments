@@ -30,7 +30,12 @@ export default { components: { YoutubeTrailer, Button } };
 }
 
 .background-two {
-  background: linear-gradient(0deg, $onyx-3, rgb(0, 0, 0, 0) 20% 80%, $onyx-3);
+  background: linear-gradient(
+    0deg,
+    $onyx-3,
+    rgb(0, 0, 0, 0.2) 10% 90%,
+    $onyx-3
+  );
 }
 
 .hero {

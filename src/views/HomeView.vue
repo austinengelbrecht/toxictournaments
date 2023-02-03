@@ -1,13 +1,11 @@
 <script setup>
+import TheComingSoon from "../components/TheComingSoon.vue";
 import IntroHero from "../components/TheIntro/IntroHero.vue";
-import NewIntroHero from "../components/TheIntro/NewIntroHero.vue";
-import IntroTrailer from "../components/TheTrailer/IntroTrailer.vue";
 </script>
 
 <template>
   <main>
-    <NewIntroHero />
-    <!-- <IntroHero /> -->
-    <!-- <IntroTrailer /> -->
+    <IntroHero />
+    <TheComingSoon />
   </main>
 </template>
