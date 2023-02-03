@@ -1,6 +1,6 @@
 <template>
   <div class="feature">
-    <p class="feature-coming">Coming Soon!</p>
+    <p class="feature-coming">Website Coming Soon!</p>
   </div>
 </template>
 
