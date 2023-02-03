@@ -17,9 +17,10 @@
 </template>
 
 <script>
+import Button from "../Button.vue";
 import YoutubeTrailer from "./YoutubeTrailer.vue";
 
-export default { components: { YoutubeTrailer } };
+export default { components: { YoutubeTrailer, Button } };
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +30,7 @@ export default { components: { YoutubeTrailer } };
 }
 
 .background-two {
-  background: linear-gradient(0deg, $onyx-3, rgb(0, 0, 0, 0) 15% 85%, $onyx-3);
+  background: linear-gradient(0deg, $onyx-3, rgb(0, 0, 0, 0) 20% 80%, $onyx-3);
 }
 
 .hero {
@@ -47,14 +48,24 @@ export default { components: { YoutubeTrailer } };
   );
 
   &-intro {
-    flex-grow: 1;
-    max-width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin-bottom: 6rem;
     padding-right: 6rem;
+
+    max-width: 600px;
 
     &-heading {
       font-size: 4rem;
       text-transform: capitalize;
       margin: 0;
+    }
+
+    @media screen and (max-width: 1215px) {
+      text-align: center;
+      justify-content: center;
+      padding-right: 0;
     }
   }
 
