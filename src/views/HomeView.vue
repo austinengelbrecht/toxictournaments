@@ -8,6 +8,6 @@ import IntroTrailer from "../components/TheTrailer/IntroTrailer.vue";
   <main>
     <NewIntroHero />
     <!-- <IntroHero /> -->
-    <IntroTrailer />
+    <!-- <IntroTrailer /> -->
   </main>
 </template>

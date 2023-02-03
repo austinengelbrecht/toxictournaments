@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div>
+    <div class="hero-intro">
       <h1>Bring your competition to life</h1>
       <p>
         Elevate your gaming skills, build your competitive spirit, and
@@ -8,7 +8,7 @@
       </p>
     </div>
 
-    <YoutubeTrailer />
+    <YoutubeTrailer class="hero-video" />
   </section>
 </template>
 
@@ -18,4 +18,16 @@ import YoutubeTrailer from "./YoutubeTrailer.vue";
 export default { components: { YoutubeTrailer } };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.hero {
+  display: flex;
+  flex-flow: row wrap;
+
+  padding: 4rem 2rem;
+
+  &-intro {
+    flex-grow: 1;
+    max-width: 600px;
+  }
+}
+</style>
