@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import { type } from 'os';
 
 export default {
   props: {
@@ -13,6 +12,12 @@ export default {
       type: String,
       default() { 
         return "#"
+      }
+    },
+    text: {
+      type: String,
+      default() {
+        return "Need to Add text"
       }
     }
   }
