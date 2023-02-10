@@ -6,8 +6,8 @@
     </router-link>
 
     <ul class="socials">
-      <li v-for="link in socialLinks" class="socials-links">
-        <a :key="link.url" :href="link.url" target="_blank">
+      <li v-for="link in socialLinks" class="socials-links" :key="link.url">
+        <a :href="link.url" target="_blank">
           <Icon :icon="link.icon" class="icon" />
           <span class="sr-only">{{ link.linkText }}</span>
         </a>
