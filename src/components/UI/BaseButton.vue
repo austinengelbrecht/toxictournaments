@@ -10,15 +10,9 @@ export default {
   props: {
     goto: {
       type: String,
-      default() { 
-        return "#"
-      }
     },
     text: {
       type: String,
-      default() {
-        return "Need to Add text"
-      }
     }
   }
 };
