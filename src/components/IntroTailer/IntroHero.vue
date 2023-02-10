@@ -10,7 +10,7 @@
           </p>
         </div>
 
-        <YoutubeTrailer class="hero-video" />
+        <IntroTrailer class="hero-video" />
       </div>
     </div>
   </section>
@@ -18,9 +18,9 @@
 
 <script>
 import Button from "../UI/Button.vue";
-import YoutubeTrailer from "./IntroTrailer.vue";
+import IntroTrailer from "./IntroTrailer.vue";
 
-export default { components: { YoutubeTrailer, Button } };
+export default { components: { IntroTrailer, Button } };
 </script>
 
 <style lang="scss" scoped>
