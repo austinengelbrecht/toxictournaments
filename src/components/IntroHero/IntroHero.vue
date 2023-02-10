@@ -10,17 +10,17 @@
           </p>
         </div>
 
-        <YoutubeTrailer class="hero-video" />
+        <IntroTrailer class="hero-video" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Button from "../Button.vue";
-import YoutubeTrailer from "./YoutubeTrailer.vue";
+import Button from "../UI/Button.vue";
+import IntroTrailer from "./IntroTrailer.vue";
 
-export default { components: { YoutubeTrailer, Button } };
+export default { components: { IntroTrailer, Button } };
 </script>
 
 <style lang="scss" scoped>

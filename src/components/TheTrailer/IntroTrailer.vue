@@ -1,3 +1,6 @@
+<!-- ! Depreciated - Do not use this component -->
+<!-- todo: Needs to be removed - saving for text -->
+
 <template>
   <section class="trailer">
     <YoutubeTrailer class="trailer-video" />
@@ -18,7 +21,7 @@
 </template>
 
 <script>
-import YoutubeTrailer from "../TheIntro/YoutubeTrailer.vue";
+import YoutubeTrailer from "../TheIntro/IntroTrailer.vue";
 import Button from "../Button.vue";
 
 export default {
