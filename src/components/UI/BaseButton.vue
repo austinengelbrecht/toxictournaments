@@ -11,8 +11,8 @@ export default {
   props: {
     goto: {
       type: String,
-      default()
-      { return "#"
+      default() { 
+        return "#"
       }
     }
   }
