@@ -1,3 +1,6 @@
+<!-- ! Depreciated - Do not use this component -->
+<!-- todo: Needs to be removed - saving for text -->
+
 <template>
   <section class="trailer">
     <YoutubeTrailer class="trailer-video" />
