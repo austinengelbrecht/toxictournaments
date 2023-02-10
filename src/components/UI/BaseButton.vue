@@ -5,11 +5,17 @@
 </template>
 
 <script>
+import { type } from 'os';
+
 export default {
-  props: ["goto", "text"],
-  data() {
-    return {};
-  },
+  props: {
+    goto: {
+      type: String,
+      default()
+      { return "#"
+      }
+    }
+  }
 };
 </script>
 
