@@ -6,9 +6,13 @@
 
 <script>
 export default {
-  props: ["goto", "text"],
-  data() {
-    return {};
+  props: {
+    goto: {
+      type: String,
+    },
+    text: {
+      type: String,
+    },
   },
 };
 </script>

@@ -17,10 +17,9 @@
 </template>
 
 <script>
-import Button from "../UI/Button.vue";
 import IntroTrailer from "./IntroTrailer.vue";
 
-export default { components: { IntroTrailer, Button } };
+export default { components: { IntroTrailer } };
 </script>
 
 <style lang="scss" scoped>
