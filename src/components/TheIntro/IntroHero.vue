@@ -18,7 +18,7 @@
 
 <script>
 import Button from "../UI/Button.vue";
-import YoutubeTrailer from "./YoutubeTrailer.vue";
+import YoutubeTrailer from "./IntroTrailer.vue";
 
 export default { components: { YoutubeTrailer, Button } };
 </script>

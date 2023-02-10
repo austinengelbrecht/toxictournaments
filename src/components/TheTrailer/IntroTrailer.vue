@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import YoutubeTrailer from "../TheIntro/YoutubeTrailer.vue";
+import YoutubeTrailer from "../TheIntro/IntroTrailer.vue";
 import Button from "../Button.vue";
 
 export default {
