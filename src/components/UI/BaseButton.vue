@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 export default {
   props: {
     goto: {
@@ -13,8 +12,8 @@ export default {
     },
     text: {
       type: String,
-    }
-  }
+    },
+  },
 };
 </script>
 
