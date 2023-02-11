@@ -37,11 +37,11 @@ export default {
           linkText: "Goto our YouTube",
           icon: "mdi:youtube",
         },
-        // {
-        //   url: "#",
-        //   linkText: "Goto our Twitch",
-        //   icon: "mdi:twitch",
-        // },
+        {
+          url: "#",
+          linkText: "Goto our Twitch",
+          icon: "mdi:twitch",
+        },
         {
           url: "https://www.facebook.com/ToxicTournamentsYT/",
           linkText: "Goto our Facebook",
