@@ -40,9 +40,9 @@ $colorscheme: (
   }
 }
 
-.bg {
-  @include color-modifiers(background-color);
-}
+// .bg {
+//   @include color-modifiers(background-color);
+// }
 
 .hidden {
   display: none;
