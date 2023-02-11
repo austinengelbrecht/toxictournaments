@@ -8,7 +8,6 @@ module.exports = {
       white: "#ffffff",
       offwhite: "#ebebeb",
       black: "#000000",
-
       logo: {
         1: "#14d900",
         2: "#13c900",

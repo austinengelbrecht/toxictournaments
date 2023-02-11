@@ -1,6 +1,6 @@
 <template>
   <div class="navbar bg-onyx-3">
-    <router-link to="/home" class="navbar-home">
+    <router-link to="/home" class="navbar-home flex flex-nowrap flex-row">
       <ToxicLogo class="navbar-home-logo" />
       <h1 class="navbar-home-title">Toxic Tournaments</h1>
     </router-link>
