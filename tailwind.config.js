@@ -33,7 +33,11 @@ module.exports = {
         5: "#3d0959",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        ice: ["iceland", "cursive"],
+      },
+    },
   },
   plugins: [],
 };
