@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar bg-onyx-3">
-    <router-link to="/home" class="navbar-home">
-      <ToxicLogo class="navbar-home-logo" />
-      <h1 class="navbar-home-title">Toxic Tournaments</h1>
+  <div class="bg-onyx-3 h-[100px]">
+    <router-link to="/home" class="home flex flex-nowrap flex-row items-center">
+      <ToxicLogo class="w-[100px] h-auto hover:animate-pulse" />
+      <h1 class="home-title text-3xl">Toxic Tournaments</h1>
     </router-link>
   </div>
 </template>
@@ -21,24 +21,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navbar {
-  height: 100px;
-
-  &-home {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    flex-grow: 1;
-
-    &-logo {
-      width: 100px;
-      height: auto;
-    }
-
-    &-title {
-      @media (max-width: 800px) {
-        display: none;
-      }
+.home {
+  &-title {
+    @media (max-width: 800px) {
+      display: none;
     }
   }
 }

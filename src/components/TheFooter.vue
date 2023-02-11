@@ -1,20 +1,22 @@
 <template>
-  <div class="footer bg-onyx-3">
-    <router-link to="/home" class="footer-home">
-      <ToxicLogo class="footer-home-logo" />
-      <h2 class="footer-home-title">Toxic Tournaments</h2>
+  <div class="footer bg-onyx-3 pb-4">
+    <router-link
+      to="/home"
+      class="flex flex-col flex-nowrap justify-center items-center"
+    >
+      <ToxicLogo class="w-[100px] h-auto" />
     </router-link>
 
-    <ul class="socials">
-      <li v-for="link in socialLinks" class="socials-links" :key="link.url">
-        <a :href="link.url" target="_blank">
-          <Icon :icon="link.icon" class="icon" />
+    <ul class="flex flex-row flex-nowrap justify-center mt-4">
+      <li v-for="link in socialLinks" class="px-3" :key="link.url">
+        <a :href="link.url" target="_blank" class="hover:text-offwhite">
+          <Icon :icon="link.icon" class="w-[32px] h-[32px]" />
           <span class="sr-only">{{ link.linkText }}</span>
         </a>
       </li>
     </ul>
 
-    <div class="footer-copyright">
+    <div class="text-center mt-8">
       <span>&copy;2022 Toxic Tournaments</span>
     </div>
   </div>
@@ -65,50 +67,6 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  padding: 2rem;
   color: #8a8887;
-
-  a {
-    &:hover {
-      color: $off-white;
-    }
-  }
-
-  &-home {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    &-logo {
-      width: 100px;
-      height: auto;
-    }
-
-    &-title {
-      margin: 0;
-    }
-  }
-
-  &-copyright {
-    margin-top: 4rem;
-    text-align: center;
-  }
-}
-
-.socials {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  margin-top: 4rem;
-
-  &-links {
-    padding: 0 1rem;
-  }
-}
-
-.icon {
-  width: 32px;
-  height: 32px;
 }
 </style>
