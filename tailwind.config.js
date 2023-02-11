@@ -8,6 +8,11 @@ module.exports = {
       white: "#ffffff",
       offwhite: "#ebebeb",
       black: "#000000",
+      onyx: {
+        1: "#3a3a3a",
+        2: "#2a2a2a",
+        3: "#1a1a1a",
+      },
       logo: {
         1: "#14d900",
         2: "#13c900",
