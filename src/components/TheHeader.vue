@@ -1,6 +1,9 @@
 <template>
   <div class="navbar bg-onyx-3">
-    <router-link to="/home" class="navbar-home flex flex-nowrap flex-row">
+    <router-link
+      to="/home"
+      class="navbar-home flex flex-nowrap flex-row items-center"
+    >
       <ToxicLogo class="navbar-home-logo" />
       <h1 class="navbar-home-title">Toxic Tournaments</h1>
     </router-link>
@@ -25,11 +28,6 @@ export default {
   height: 100px;
 
   &-home {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    flex-grow: 1;
-
     &-logo {
       width: 100px;
       height: auto;
