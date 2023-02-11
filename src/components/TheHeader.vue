@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-onyx-3 h-px-{100}">
+  <div class="bg-onyx-3 h-[100px]">
     <router-link to="/home" class="home flex flex-nowrap flex-row items-center">
-      <ToxicLogo class="home-logo w-auto hover:animate-pulse" />
+      <ToxicLogo class="w-[100px] h-auto hover:animate-pulse" />
       <h1 class="home-title text-3xl">Toxic Tournaments</h1>
     </router-link>
   </div>
@@ -22,11 +22,6 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  &-logo {
-    width: 100px;
-    height: auto;
-  }
-
   &-title {
     @media (max-width: 800px) {
       display: none;
