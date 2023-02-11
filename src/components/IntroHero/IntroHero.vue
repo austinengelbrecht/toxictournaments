@@ -1,16 +1,20 @@
 <template>
   <section class="background">
     <div class="background-two">
-      <div class="hero">
-        <div class="hero-intro">
-          <h1 class="hero-intro-heading">Bring your competition to life</h1>
-          <p class="hero-intro-subtext">
+      <div
+        class="hero flex flex-row flex-wrap justify-center py-[10rem] px-[2rem]"
+      >
+        <div class="hero-intro flex flex-col flex-nowrap max-w-[560px]">
+          <h1 class="text-6xl mb-4 capitalize">
+            Bring your competition to life
+          </h1>
+          <p class="">
             Elevate your gaming skills, build your competitive spirit, and
             experience the excitement as you climb the tournament brackets.
           </p>
         </div>
 
-        <IntroTrailer class="hero-video" />
+        <IntroTrailer class="hero-video w-max-[560px] h-[315px]" />
       </div>
     </div>
   </section>
@@ -30,19 +34,13 @@ export default { components: { IntroTrailer } };
     background: linear-gradient(
       0deg,
       $onyx-3,
-      rgb(0, 0, 0, 0.2) 10% 90%,
+      rgb(0, 0, 0, 0.1) 10% 90%,
       $onyx-3
     );
   }
 }
 
 .hero {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  padding: 10rem 2rem;
-
   background: linear-gradient(
     -40deg,
     $poison-transition,
@@ -51,30 +49,12 @@ export default { components: { IntroTrailer } };
   );
 
   &-intro {
-    display: flex;
-    flex-flow: column nowrap;
-
+    //justify-content: center;
     margin-bottom: 6rem;
-    padding-right: 6rem;
 
-    max-width: 600px;
-
-    &-heading {
-      font-size: 4rem;
-      text-transform: capitalize;
-      margin: 0;
+    @media screen and (min-width: 1215px) {
+      padding-right: 6rem;
     }
-
-    @media screen and (max-width: 1215px) {
-      text-align: center;
-      justify-content: center;
-      padding-right: 0;
-    }
-  }
-
-  &-video {
-    max-width: 560px;
-    height: 315px;
   }
 }
 </style>
