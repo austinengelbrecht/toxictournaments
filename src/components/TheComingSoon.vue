@@ -1,6 +1,6 @@
 <template>
-  <div class="feature">
-    <p class="feature-coming">Website Coming Soon!</p>
+  <div class="p-[10rem] text-center bg-onyx-3">
+    <p class="text-4xl font-iceland">Website Coming Soon!</p>
   </div>
 </template>
 
@@ -10,11 +10,6 @@ export default {};
 
 <style lang="scss" scoped>
 .feature {
-  padding: 10rem 0;
-  text-align: center;
-
-  background-color: $onyx-3;
-
   &-coming {
     font-size: 4rem;
     font-family: "Iceland", cursive;
