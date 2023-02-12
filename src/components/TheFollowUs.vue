@@ -3,8 +3,11 @@
     <h2 class="capitalize text-8xl font-ice">Follow Us</h2>
 
     <ul>
-      <li>
-        <Icon />
+      <li v-for="link in socialLinks" :key="link.url">
+        <a :href="link.url" target="_blank" class="hover:text-offwhite">
+          <Icon :icon="link.icon" class="w-[32px] h-[32px]" />
+          <span class="sr-only">{{ link.linkText }}</span>
+        </a>
       </li>
     </ul>
   </section>
