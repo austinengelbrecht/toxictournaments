@@ -1,11 +1,17 @@
 <template>
-  <section class="bg-onyx-3 flex flex-row flex-wrap justify-center">
-    <h2 class="uppercase text-8xl font-ice">Follow Us</h2>
+  <section
+    class="flex flex-row flex-wrap justify-center items-center bg-onyx-2 p-8 py-10"
+  >
+    <div class="bg-onyx-2">
+      <h2 class="followus uppercase text-6xl font-sourcesans font-bold">
+        Follow Us
+      </h2>
+    </div>
 
-    <ul class="flex flex-row ml-10">
-      <li v-for="link in socialLinks" :key="link.url">
-        <a :href="link.url" target="_blank" class="hover:text-offwhite">
-          <Icon :icon="link.icon" class="w-[32px] h-[32px]" />
+    <ul class="socials flex flex-row">
+      <li v-for="link in socialLinks" :key="link.url" class="px-3">
+        <a :href="link.url" target="_blank" class="">
+          <Icon :icon="link.icon" class="w-[48px] h-[48px]" />
           <span class="sr-only">{{ link.linkText }}</span>
         </a>
       </li>
@@ -27,4 +33,21 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.followus {
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: $onyx-3;
+
+  @media (max-width: 400px) {
+    font-size: 3rem;
+  }
+}
+
+.socials {
+  margin-top: 2rem;
+
+  @media (min-width: 660px) {
+    margin: 0 0 2rem 0;
+  }
+}
+</style>
