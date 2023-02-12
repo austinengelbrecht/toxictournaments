@@ -36,6 +36,7 @@ module.exports = {
     extend: {
       fontFamily: {
         ice: ["iceland", "cursive"],
+        sourcesans: ["Source Sans Pro", "monospace"],
       },
     },
   },
