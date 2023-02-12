@@ -1,5 +1,5 @@
 <template>
-  <div class="footer bg-onyx-3 pb-4">
+  <div class="footer bg-onyx-3 pb-4 mt-[20rem]">
     <router-link
       to="/home"
       class="flex flex-col flex-nowrap justify-center items-center"
