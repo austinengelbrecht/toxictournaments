@@ -25,6 +25,7 @@
 <script>
 import ToxicLogo from "@/assets/icons/ToxicLogo.vue";
 import { Icon } from "@iconify/vue";
+import socialLinks from "@/assets/data/social_links.json";
 
 export default {
   components: {
@@ -33,7 +34,7 @@ export default {
   },
   data() {
     return {
-      socialLinks: [],
+      socialLinks: socialLinks,
     };
   },
 };
