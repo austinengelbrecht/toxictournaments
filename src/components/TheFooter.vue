@@ -33,33 +33,7 @@ export default {
   },
   data() {
     return {
-      socialLinks: [
-        {
-          url: "https://www.youtube.com/channel/UC_u9_sjl2Q82zTK7WZwVr2A",
-          linkText: "Goto our YouTube",
-          icon: "mdi:youtube",
-        },
-        // {
-        //   url: "#",
-        //   linkText: "Goto our Twitch",
-        //   icon: "mdi:twitch",
-        // },
-        {
-          url: "https://www.facebook.com/ToxicTournamentsYT/",
-          linkText: "Goto our Facebook",
-          icon: "mdi:facebook",
-        },
-        {
-          url: "https://www.instagram.com/toxictournaments/",
-          linkText: "Goto our Instagram",
-          icon: "mdi:instagram",
-        },
-        {
-          url: "https://www.tiktok.com/@toxic_tournaments",
-          linkText: "Goto our TikTok",
-          icon: "ic:baseline-tiktok",
-        },
-      ],
+      socialLinks: [],
     };
   },
 };
