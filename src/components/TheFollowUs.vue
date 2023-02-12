@@ -2,7 +2,7 @@
   <section
     class="flex flex-row flex-wrap justify-center items-center bg-onyx-2 p-8 py-10"
   >
-    <div class="bg-onyx-2">
+    <div class="">
       <h2 class="followus uppercase text-6xl font-sourcesans font-bold">
         Follow Us
       </h2>
@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .followus {
   -webkit-text-stroke: 2px white;
-  -webkit-text-fill-color: $onyx-3;
+  -webkit-text-fill-color: transparent;
 
   @media (max-width: 400px) {
     font-size: 3rem;
@@ -47,7 +47,7 @@ export default {
   margin-top: 2rem;
 
   @media (min-width: 660px) {
-    margin: 0 0 2rem 0;
+    margin: 0 0 0 2rem;
   }
 }
 </style>
