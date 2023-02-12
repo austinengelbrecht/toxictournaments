@@ -1,6 +1,7 @@
 <template>
-  <section>
-    <h2 class="capitalize">Follow Us</h2>
+  <section class="bg-onyx-3 flex flex-row flex-wrap justify-center">
+    <h2 class="capitalize text-8xl font-ice">Follow Us</h2>
+
     <ul>
       <li>
         <Icon />
@@ -10,7 +11,7 @@
 </template>
 
 <script>
-import socialLinks from "@/assets/data/social_links.vue";
+import socialLinks from "@/assets/data/social_links.json";
 import { Icon } from "@iconify/vue";
 
 export default {
