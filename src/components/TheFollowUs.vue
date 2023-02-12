@@ -1,8 +1,8 @@
 <template>
   <section class="bg-onyx-3 flex flex-row flex-wrap justify-center">
-    <h2 class="capitalize text-8xl font-ice">Follow Us</h2>
+    <h2 class="uppercase text-8xl font-ice">Follow Us</h2>
 
-    <ul>
+    <ul class="flex flex-row ml-10">
       <li v-for="link in socialLinks" :key="link.url">
         <a :href="link.url" target="_blank" class="hover:text-offwhite">
           <Icon :icon="link.icon" class="w-[32px] h-[32px]" />
