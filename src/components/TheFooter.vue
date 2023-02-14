@@ -1,5 +1,5 @@
 <template>
-  <div class="footer bg-onyx-3 pb-4 mt-[20rem]">
+  <section class="footer bg-onyx-3 pb-4 mt-[20rem] py-8">
     <router-link
       to="/home"
       class="flex flex-col flex-nowrap justify-center items-center"
@@ -19,7 +19,7 @@
     <div class="text-center mt-8">
       <span>&copy;2022 Toxic Tournaments</span>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
