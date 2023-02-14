@@ -5,9 +5,10 @@
     <div class="w-[800px] my-0 mx-auto">
       <swiper
         :slides-per-view="1"
-        navigation
+        :navigation="true"
         :pagination="{ clickable: true }"
         :scrollbar="{ draggable: true }"
+        :modules="modules"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
       >
