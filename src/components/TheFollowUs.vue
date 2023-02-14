@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-row flex-wrap justify-center items-center bg-onyx-2 p-8 py-10"
+    class="background-transition flex flex-row flex-wrap justify-center items-center p-8 py-12"
   >
     <div class="">
       <h2 class="followus uppercase text-6xl font-sourcesans font-bold">
@@ -49,5 +49,9 @@ export default {
   @media (min-width: 660px) {
     margin: 0 0 0 2rem;
   }
+}
+
+.background-transition {
+  background: linear-gradient(180deg, $onyx-3, $onyx-2);
 }
 </style>

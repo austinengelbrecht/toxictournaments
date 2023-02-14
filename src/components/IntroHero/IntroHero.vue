@@ -49,7 +49,6 @@ export default { components: { IntroTrailer } };
   );
 
   &-intro {
-    //justify-content: center;
     margin-bottom: 6rem;
 
     @media screen and (min-width: 1215px) {
