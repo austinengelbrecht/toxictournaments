@@ -13,7 +13,9 @@
         @slideChange="onSlideChange"
       >
         <swiper-slide v-for="video in videoLinks" :key="video.url">
-          <LatestVideo :video="video.url" class="m-0-auto" />
+          <div class="p-10">
+            <LatestVideo :video="video.url" class="mx-auto my-0" />
+          </div>
         </swiper-slide>
       </swiper>
     </div>

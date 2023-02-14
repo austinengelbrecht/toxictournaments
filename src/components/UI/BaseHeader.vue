@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-10">
+  <div class="text-center">
     <h2 class="text-6xl">{{ title }}</h2>
     <p class="uppercase font-ice text-2xl">{{ subtitle }}</p>
   </div>
