@@ -1,12 +1,15 @@
 <template>
-  <div></div>
+  <div>
+    <h2>{{ title }}</h2>
+    <p>{{ subtitle }}</p>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    title: { type: String },
-    subtitle: { type: String },
+    title: { type: String, required: true },
+    subtitle: { type: String, required: false },
   },
 };
 </script>
