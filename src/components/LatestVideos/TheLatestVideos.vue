@@ -1,6 +1,6 @@
 <template>
   <section>
-    <BaseHeader :title="`Our Latest Content`" />
+    <BaseHeader :title="`Watch Our Latest Content`" />
   </section>
 </template>
 

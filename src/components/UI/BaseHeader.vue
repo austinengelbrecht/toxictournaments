@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h2>{{ title }}</h2>
-    <p>{{ subtitle }}</p>
+  <div class="mx-10">
+    <h2 class="text-6xl">{{ title }}</h2>
+    <p class="uppercase font-ice text-2xl">{{ subtitle }}</p>
   </div>
 </template>
 
