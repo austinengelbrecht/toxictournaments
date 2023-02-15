@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h2 class="text-6xl">{{ title }}</h2>
+    <h2 class="text-6xl capitalize">{{ title }}</h2>
     <p class="uppercase font-ice text-2xl">{{ subtitle }}</p>
   </div>
 </template>

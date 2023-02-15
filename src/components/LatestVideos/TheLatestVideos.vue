@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col mt-20">
-    <BaseHeader :title="`Watch Our Latest Content`" />
+    <BaseHeader :title="`Watch Our Best Content`" />
 
     <div class="max-w-[800px] h-auto my-0 mx-auto">
       <swiper
