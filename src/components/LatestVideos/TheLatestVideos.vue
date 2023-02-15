@@ -66,12 +66,21 @@ export default {
   &-next {
     color: $off-white;
     border-radius: 10px;
+    margin: 0 0.5rem;
 
     &::after {
       background-color: $onyx-1;
       padding: 1rem;
 
       border-radius: 10px;
+    }
+
+    &:hover,
+    &:active {
+      &:after {
+        background-color: $onyx-3;
+        transition: 0.5s;
+      }
     }
   }
 }
@@ -81,6 +90,14 @@ export default {
 
   &-active {
     background-color: $toxic-3;
+  }
+}
+
+.swiper-scrollbar {
+  background: $onyx-1;
+
+  &-drag {
+    background: $onyx-3;
   }
 }
 </style>
