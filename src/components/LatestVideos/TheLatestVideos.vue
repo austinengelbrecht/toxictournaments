@@ -2,7 +2,7 @@
   <section class="flex flex-col mt-20">
     <BaseHeader :title="`Watch Our Latest Content`" />
 
-    <div class="w-[800px] my-0 mx-auto">
+    <div class="max-w-[800px] h-auto my-0 mx-auto">
       <swiper
         :slides-per-view="1"
         :navigation="true"
@@ -11,6 +11,8 @@
         :modules="modules"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
+        :loop="true"
+        class="max-w-[800px] h-auto"
       >
         <swiper-slide v-for="video in videoLinks" :key="video.url">
           <div class="p-10">
@@ -58,4 +60,27 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+.swiper-button {
+  &-prev,
+  &-next {
+    color: $off-white;
+    border-radius: 10px;
+
+    &::after {
+      background-color: $onyx-1;
+      padding: 1rem;
+
+      border-radius: 10px;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: $black;
+
+  &-active {
+    background-color: $toxic-3;
+  }
+}
+</style>
