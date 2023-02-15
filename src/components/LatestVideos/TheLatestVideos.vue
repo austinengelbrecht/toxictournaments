@@ -7,7 +7,6 @@
         :slides-per-view="1"
         :navigation="true"
         :pagination="{ clickable: true }"
-        :scrollbar="{ draggable: true }"
         :modules="modules"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
@@ -28,11 +27,10 @@
 import featuredVideos from "@/assets/data/featured_videos.json";
 
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, A11y } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
-import "swiper/scss/scrollbar";
 
 import BaseHeader from "../UI/BaseHeader.vue";
 import LatestVideo from "./LatestVideo.vue";
@@ -54,7 +52,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y],
+      modules: [Navigation, Pagination, A11y],
     };
   },
 };
