@@ -89,7 +89,7 @@ export default {
     margin: 0 0.5rem;
 
     &::after {
-      background-color: $onyx-1;
+      background-color: rgb(58, 58, 58, 0.75);
       padding: 1rem;
 
       border-radius: 10px;
