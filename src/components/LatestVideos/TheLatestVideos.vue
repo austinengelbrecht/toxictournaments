@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col mt-[15rem]">
+  <section class="flex flex-col mt-[10rem] md:mt-[15rem]">
     <BaseHeader :title="`Watch Our Best Content`" />
 
     <div class="my-0 mx-auto max-w-[800px] w-[100%]">
