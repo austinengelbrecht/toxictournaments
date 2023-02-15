@@ -1,5 +1,6 @@
 <script setup>
 import IntroHero from "../components/IntroHero/IntroHero.vue";
+import TheLatestVideos from "../components/LatestVideos/TheLatestVideos.vue";
 import TheFollowUs from "../components/TheFollowUs.vue";
 </script>
 
@@ -7,5 +8,6 @@ import TheFollowUs from "../components/TheFollowUs.vue";
   <main>
     <IntroHero />
     <TheFollowUs />
+    <TheLatestVideos />
   </main>
 </template>
