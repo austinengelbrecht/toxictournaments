@@ -2,7 +2,7 @@
   <section class="flex flex-col mt-20">
     <BaseHeader :title="`Watch Our Best Content`" />
 
-    <div class="max-w-[800px] h-auto my-0 mx-auto">
+    <div class="my-0 mx-auto max-w-[800px] w-[100%]">
       <swiper
         :slides-per-view="1"
         :navigation="true"
@@ -11,11 +11,13 @@
         @swiper="onSwiper"
         @slideChange="onSlideChange"
         :loop="true"
-        class="max-w-[800px] h-auto"
       >
         <swiper-slide v-for="video in videoLinks" :key="video.url">
           <div class="p-10">
-            <LatestVideo :video="video.url" class="mx-auto my-0" />
+            <LatestVideo
+              :video="video.url"
+              class="mx-auto my-0 max-w-[700px] h-[300px] sm:h-[350px] md:h-[450px] lg:h-[500px]"
+            />
           </div>
         </swiper-slide>
       </swiper>
@@ -59,6 +61,26 @@ export default {
 </script>
 
 <style lang="scss">
+.swiper {
+  width: 100%;
+  max-width: 800px;
+
+  &-slide {
+    width: 100%;
+    max-width: 800px;
+
+    &-active {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+
+  &-wrapper {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
 .swiper-button {
   &-prev,
   &-next {
