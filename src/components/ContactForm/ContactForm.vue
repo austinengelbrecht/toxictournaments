@@ -1,6 +1,6 @@
 <template>
   <form>
-    <label for=""></label>
+    <label for="" class="capitalize">Sign Up to our newsletters</label>
     <input type="email" name="" id="" />
     <button type="submit">Sign Up</button>
   </form>
