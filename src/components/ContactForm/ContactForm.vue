@@ -1,5 +1,9 @@
 <template>
-  <form></form>
+  <form>
+    <label for=""></label>
+    <input type="email" name="" id="" />
+    <button type="submit">Sign Up</button>
+  </form>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="signup" class="mt-[10rem]">
     <BaseHeader :title="`Sign Up`" />
 
     <ContactForm />
