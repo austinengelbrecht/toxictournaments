@@ -1,7 +1,12 @@
 <template>
   <form>
-    <label for="" class="capitalize">Sign Up to our newsletters</label>
-    <input type="email" name="" id="" />
+    <div>
+      <label for="newsletter-signup" class="capitalize"
+        >Enter Email Address</label
+      >
+      <input type="email" name="News Letter Signup" id="newsletter-signup" />
+    </div>
+
     <button type="submit">Sign Up</button>
   </form>
 </template>
