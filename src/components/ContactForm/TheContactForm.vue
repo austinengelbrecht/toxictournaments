@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <ContactForm class="px-8 py-12 bg-onyx-1 w-[50%]" />
+    <ContactForm class="px-8 py-12 bg-onyx-1 w-[600px]" />
   </section>
 </template>
 
