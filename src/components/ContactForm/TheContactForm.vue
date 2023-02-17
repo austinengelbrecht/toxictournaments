@@ -20,10 +20,9 @@
 </template>
 
 <script>
-import BaseHeader from "../UI/BaseHeader.vue";
 import ContactForm from "./EmailForm.vue";
 
-export default { components: { BaseHeader, ContactForm } };
+export default { components: { ContactForm } };
 </script>
 
 <style lang="scss" scoped>
