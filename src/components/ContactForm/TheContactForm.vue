@@ -8,7 +8,7 @@
 
 <script>
 import BaseHeader from "../UI/BaseHeader.vue";
-import ContactForm from "./ContactForm.vue";
+import ContactForm from "./EmailForm.vue";
 
 export default { components: { BaseHeader, ContactForm } };
 </script>
