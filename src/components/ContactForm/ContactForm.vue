@@ -29,14 +29,19 @@ export default {
   methods: {
     submitEmail() {
       axios
-        .post("https://toxic-tournaments-default-rtdb.firebaseio.com/", {
-          email: this.userEmail,
-        })
+        .post(
+          "https://toxic-tournaments-default-rtdb.firebaseio.com/email-signup.json",
+          {
+            email: this.userEmail,
+          }
+        )
         .then((repsonse) => {
           console.log(repsonse);
+          console.log("I was successful!");
         })
         .catch((error) => {
           console.log(error);
+          console.log("I hit an error!");
         });
 
       this.userEmail = "";
