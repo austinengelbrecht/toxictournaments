@@ -10,7 +10,7 @@
       v-model="userEmail"
     />
 
-    <button type="submit" class="glow-on-hover">
+    <button type="submit" class="glow-on-hover button">
       Join The Toxic Community
     </button>
   </form>
@@ -52,4 +52,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/styles/partials/glow-on-hover";
+
+.button {
+  padding: 1rem 2rem;
+}
 </style>
