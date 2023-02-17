@@ -1,16 +1,14 @@
 <template>
-  <form @submit.prevent="submitEmail">
-    <div>
-      <label for="newsletter-signup" class="capitalize"
-        >Enter Email Address</label
-      >
-      <input
-        type="email"
-        name="News Letter Signup"
-        id="newsletter-signup"
-        v-model="userEmail"
-      />
-    </div>
+  <form @submit.prevent="submitEmail" class="flex flex-col flex-nowrap">
+    <label for="newsletter-signup" class="capitalize"
+      >Enter Email Address</label
+    >
+    <input
+      type="email"
+      name="News Letter Signup"
+      id="newsletter-signup"
+      v-model="userEmail"
+    />
 
     <button type="submit">Join The Toxic Community</button>
   </form>
