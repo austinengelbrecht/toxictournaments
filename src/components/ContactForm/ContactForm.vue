@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form @submit.prevent="submitEmail">
     <div>
       <label for="newsletter-signup" class="capitalize"
         >Enter Email Address</label
@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -25,7 +27,10 @@ export default {
     };
   },
   methods: {
-    submitEmail() {},
+    submitEmail() {
+
+      axios.post {}
+    },
   },
 };
 </script>
