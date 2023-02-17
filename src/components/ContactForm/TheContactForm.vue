@@ -7,12 +7,12 @@
         <p>
           Join our growing community of (definely not) toxic members. Subscribe
           to our mailing list to stay informed and up-to-date about upcoming
-          tournaments, gaming events, and other updates from your Toxic Team.
+          tournaments, gaming events, and other updates from the Toxic Team.
         </p>
       </div>
     </div>
 
-    <ContactForm class="px-8 py-12" />
+    <ContactForm class="px-8 py-12 bg-onyx-1 w-[50%]" />
   </section>
 </template>
 
