@@ -10,7 +10,7 @@
       v-model="userEmail"
     />
 
-    <button type="submit" class="cta-button glow-on-hover">
+    <button type="submit" class="glow-on-hover">
       Join The Toxic Community
     </button>
   </form>
@@ -51,5 +51,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/styles/partials/cta-button";
+@import "../../assets/styles/partials/glow-on-hover";
 </style>
