@@ -1,7 +1,7 @@
 <template>
-  <section id="signup" class="mt-[10rem] flex flex-row flex-wrap">
-    <div class="max-w-[50%] p-4 text-left">
-      <BaseHeader :title="`Want to Game with us?`" />
+  <section id="signup" class="signup mt-[10rem] flex flex-row flex-wrap">
+    <div class="signup-cta max-w-[50%] py-12 px-8 text-left bg-onyx-3">
+      <h2 class="capitalize text-6xl">Want to game with us?</h2>
 
       <p>
         Join our growing community of (definely not) toxic members. Subscribe to
@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <ContactForm />
+    <ContactForm class="px-8 py-12" />
   </section>
 </template>
 
@@ -21,4 +21,19 @@ import ContactForm from "./EmailForm.vue";
 export default { components: { BaseHeader, ContactForm } };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.signup {
+  &-cta {
+    clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+
+    &:after {
+      content: "";
+      width: 10px;
+      background-color: $toxic-3;
+    }
+  }
+
+  &-form {
+  }
+}
+</style>
