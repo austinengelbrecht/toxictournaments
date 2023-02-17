@@ -28,8 +28,18 @@ export default {
   },
   methods: {
     submitEmail() {
+      axios
+        .post("https://toxic-tournaments-default-rtdb.firebaseio.com/", {
+          email: this.userEmail,
+        })
+        .then((repsonse) => {
+          console.log(repsonse);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
 
-      axios.post {}
+      this.userEmail = "";
     },
   },
 };
