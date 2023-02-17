@@ -12,7 +12,7 @@
       />
     </div>
 
-    <button type="submit">Sign Up</button>
+    <button type="submit">Join The Toxic Community</button>
   </form>
 </template>
 
