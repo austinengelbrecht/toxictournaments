@@ -35,8 +35,5 @@ export default { components: { ContactForm } };
       transform: skew(15deg);
     }
   }
-
-  &-form {
-  }
 }
 </style>
