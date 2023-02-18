@@ -1,9 +1,13 @@
 <template>
-  <form @submit.prevent="submitEmail" class="flex flex-col flex-nowrap">
-    <label for="newsletter-signup" class="capitalize"
-      >Enter Email Address</label
-    >
+  <form
+    @submit.prevent="submitEmail"
+    class="cta-form flex flex-col flex-nowrap"
+  >
+    <label for="newsletter-signup" class="capitalize">
+      Enter Email Address
+    </label>
     <input
+      class="cta-form-input"
       type="email"
       name="News Letter Signup"
       id="newsletter-signup"
@@ -55,5 +59,14 @@ export default {
 
 .button {
   padding: 1rem 2rem;
+}
+
+.cta-form {
+  padding: 1rem;
+
+  &-input {
+    background-color: $onyx-3;
+    color: $off-white;
+  }
 }
 </style>
