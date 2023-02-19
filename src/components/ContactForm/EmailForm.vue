@@ -15,7 +15,7 @@
       v-model="userEmail"
     />
 
-    <button type="submit" class="glow-on-hover button">
+    <button type="submit" class="glow-on-hover">
       Join The Toxic Community
     </button>
   </form>
