@@ -3,7 +3,7 @@
     @submit.prevent="submitEmail"
     class="cta-form flex flex-col flex-nowrap"
   >
-    <label for="newsletter-signup" class="capitalize">
+    <label for="newsletter-signup" class="capitalize text-bold">
       Enter Email Address
     </label>
     <input
@@ -11,6 +11,7 @@
       type="email"
       name="News Letter Signup"
       id="newsletter-signup"
+      placeholder="Enter Email Address"
       v-model="userEmail"
     />
 
