@@ -1,13 +1,13 @@
 <template>
   <form
     @submit.prevent="submitEmail"
-    class="cta-form flex flex-col flex-nowrap"
+    class="cta-form flex flex-col flex-nowrap gap-4"
   >
-    <label for="newsletter-signup" class="capitalize text-bold">
+    <label for="newsletter-signup" class="capitalize font-bold text-xl">
       Enter Email Address
     </label>
     <input
-      class="cta-form-input"
+      class="cta-form-input p-4 rounded-lg text-black text-lg"
       type="email"
       name="News Letter Signup"
       id="newsletter-signup"
@@ -15,7 +15,7 @@
       v-model="userEmail"
     />
 
-    <button type="submit" class="glow-on-hover">
+    <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
       Join The Toxic Community
     </button>
   </form>
