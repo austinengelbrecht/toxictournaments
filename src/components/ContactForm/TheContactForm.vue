@@ -1,10 +1,7 @@
 <template>
   <section id="signup" class="px-8 py-16 bg-onyx-2 mt-[10rem]">
     <div class="border-solid border-toxic-3 border-4 p-8">
-      <Icon
-        icon="carbon:email"
-        class="w-[4rem] h-[4rem] my-0 mx-auto text-poison-1"
-      />
+      <ClassicController class="w-[100px] h-[100px]" />
 
       <div class="mb-8">
         <h2 class="text-6xl">Want to game with us?</h2>
@@ -22,10 +19,11 @@
 </template>
 
 <script>
+import ClassicController from "@/assets/icons/classiccontroller.vue";
 import ContactForm from "./EmailForm.vue";
 import { Icon } from "@iconify/vue";
 
-export default { components: { ContactForm, Icon } };
+export default { components: { ClassicController, ContactForm, Icon } };
 </script>
 
 <style lang="scss" scoped></style>
