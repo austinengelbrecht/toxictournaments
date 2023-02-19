@@ -56,17 +56,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/styles/partials/glow-on-hover";
-
-.button {
-  padding: 1rem 2rem;
-}
-
-.cta-form {
-  padding: 1rem;
-
-  &-input {
-    background-color: $onyx-3;
-    color: $off-white;
-  }
-}
 </style>
