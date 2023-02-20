@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import axios from "axios";
-import supabase from "../../../supabaseClient";
+//import axios from "axios";
+import supabase from "../../lib/supabaseClient.js";
 
 export default {
   data() {
