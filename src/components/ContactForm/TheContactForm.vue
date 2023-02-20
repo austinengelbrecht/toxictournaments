@@ -21,9 +21,8 @@
 <script>
 import ClassicController from "@/assets/icons/classiccontroller.vue";
 import ContactForm from "./EmailForm.vue";
-import { Icon } from "@iconify/vue";
 
-export default { components: { ClassicController, ContactForm, Icon } };
+export default { components: { ClassicController, ContactForm } };
 </script>
 
 <style lang="scss" scoped></style>
