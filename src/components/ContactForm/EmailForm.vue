@@ -23,7 +23,7 @@
 
 <script>
 //import axios from "axios";
-import supabase from "../../lib/supabaseClient.js";
+import supabase from "@/lib/supabase.js";
 
 export default {
   data() {
