@@ -34,32 +34,15 @@ export default {
   },
   methods: {
     async submitEmail() {
+      let currentDate = new Date().toJSON().slice(0, 10);
+      console.log(currentDate);
+
       await supabase
-        .from("Email Newsletter")
-        .insert([{ email: this.userEmail, created_at: "otherValue" }])
-        .execute();
+        .from("Email Newsletter Subscription")
+        .insert([{ email: this.userEmail, created_at: currentDate }]);
     },
   },
 };
-
-//   axios
-//     .post(
-//       "https://toxic-tournaments-default-rtdb.firebaseio.com/email-signup.json",
-//       {
-//         email: this.userEmail,
-//       }
-//     )
-//     .then((repsonse) => {
-//       console.log(repsonse);
-//       console.log("I was successful!");
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//       console.log("I hit an error!");
-//     });
-
-//   this.userEmail = "";
-// },
 </script>
 
 <style lang="scss" scoped>
