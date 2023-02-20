@@ -23,6 +23,7 @@
 
 <script>
 import axios from "axios";
+import supabase from "../../../supabaseClient";
 
 export default {
   data() {
@@ -33,24 +34,33 @@ export default {
   },
   methods: {
     submitEmail() {
-      axios
-        .post(
-          "https://toxic-tournaments-default-rtdb.firebaseio.com/email-signup.json",
-          {
-            email: this.userEmail,
-          }
-        )
-        .then((repsonse) => {
-          console.log(repsonse);
-          console.log("I was successful!");
-        })
-        .catch((error) => {
-          console.log(error);
-          console.log("I hit an error!");
-        });
+      async function submitEmail() {
+        const { data, error } = await supabase
+          .from('Email Newsletter')
+          .insert([
+            { email: this.userEmail, created_at: 'otherValue' },
+          ])
+      }
 
-      this.userEmail = "";
-    },
+
+    //   axios
+    //     .post(
+    //       "https://toxic-tournaments-default-rtdb.firebaseio.com/email-signup.json",
+    //       {
+    //         email: this.userEmail,
+    //       }
+    //     )
+    //     .then((repsonse) => {
+    //       console.log(repsonse);
+    //       console.log("I was successful!");
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //       console.log("I hit an error!");
+    //     });
+
+    //   this.userEmail = "";
+    // },
   },
 };
 </script>
