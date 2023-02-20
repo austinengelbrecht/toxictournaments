@@ -23,7 +23,7 @@
 
 <script>
 //import axios from "axios";
-import supabase from "@/lib/supabase.js";
+import { supabase } from "@/supabase.js";
 
 export default {
   data() {
@@ -33,36 +33,33 @@ export default {
     };
   },
   methods: {
-    submitEmail() {
-      async function submitEmail() {
-        const { data, error } = await supabase
-          .from('Email Newsletter')
-          .insert([
-            { email: this.userEmail, created_at: 'otherValue' },
-          ])
-      }
-
-
-    //   axios
-    //     .post(
-    //       "https://toxic-tournaments-default-rtdb.firebaseio.com/email-signup.json",
-    //       {
-    //         email: this.userEmail,
-    //       }
-    //     )
-    //     .then((repsonse) => {
-    //       console.log(repsonse);
-    //       console.log("I was successful!");
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //       console.log("I hit an error!");
-    //     });
-
-    //   this.userEmail = "";
-    // },
+    async submitEmail() {
+      await supabase
+        .from("Email Newsletter")
+        .insert([{ email: this.userEmail, created_at: "otherValue" }])
+        .execute();
+    },
   },
 };
+
+//   axios
+//     .post(
+//       "https://toxic-tournaments-default-rtdb.firebaseio.com/email-signup.json",
+//       {
+//         email: this.userEmail,
+//       }
+//     )
+//     .then((repsonse) => {
+//       console.log(repsonse);
+//       console.log("I was successful!");
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//       console.log("I hit an error!");
+//     });
+
+//   this.userEmail = "";
+// },
 </script>
 
 <style lang="scss" scoped>
