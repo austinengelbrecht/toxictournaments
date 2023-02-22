@@ -1,9 +1,9 @@
 <template>
   <section id="signup" class="px-8 py-16 mt-[10rem]">
-    <div class="p-8">
-      <ClassicController class="w-[250px] h-[250px]k" />
+    <div class="p-8 flex flex-row flex-wrap">
+      <ClassicController class="w-[250px] h-[250px]" />
 
-      <div class="mb-8">
+      <div class="max-w-[600px]">
         <h2 class="text-6xl">Want to game with us?</h2>
 
         <p>
@@ -13,7 +13,7 @@
         </p>
       </div>
 
-      <ContactForm class="" />
+      <ContactForm class="max-w-[500px]" />
     </div>
   </section>
 </template>

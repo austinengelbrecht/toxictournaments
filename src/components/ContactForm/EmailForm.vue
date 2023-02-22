@@ -1,13 +1,10 @@
 <template>
-  <form
-    @submit.prevent="submitEmail"
-    class="cta-form flex flex-col flex-nowrap gap-4"
-  >
+  <form @submit.prevent="submitEmail" class="flex flex-col flex-nowrap gap-4">
     <label for="newsletter-signup" class="capitalize font-bold text-xl">
       Enter Email Address
     </label>
     <input
-      class="cta-form-input p-4 rounded-lg text-black text-lg"
+      class="p-4 rounded-lg text-black text-lg"
       type="email"
       name="News Letter Signup"
       id="newsletter-signup"
