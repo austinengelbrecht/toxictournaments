@@ -1,7 +1,7 @@
 <template>
-  <section id="signup" class="px-8 py-16 bg-onyx-2 mt-[10rem]">
+  <section id="signup" class="px-8 py-16 mt-[10rem]">
     <div class="p-8">
-      <ClassicController class="w-[250px] h-[250px] bg-black" />
+      <ClassicController class="w-[250px] h-[250px]k" />
 
       <div class="mb-8">
         <h2 class="text-6xl">Want to game with us?</h2>
