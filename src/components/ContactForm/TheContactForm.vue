@@ -13,16 +13,17 @@
         </p>
       </div>
 
-      <ContactForm class="max-w-[500px]" />
+      <button class="glow-on-hover capitalize">Join the toxic Community</button>
     </div>
   </section>
 </template>
 
 <script>
 import ClassicController from "@/assets/icons/classiccontroller.vue";
-import ContactForm from "./EmailForm.vue";
 
-export default { components: { ClassicController, ContactForm } };
+export default { components: { ClassicController } };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "../../assets/styles/partials/glow-on-hover";
+</style>
