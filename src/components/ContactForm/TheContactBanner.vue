@@ -5,7 +5,7 @@
   >
     <ClassicController class="w-[250px] h-[250px]" />
 
-    <div class="max-w-[600px]">
+    <div class="max-w-[600px] flex flex-col flex-nowrap gap-4">
       <h2 class="text-6xl">Want to game with us?</h2>
 
       <p>
@@ -14,7 +14,11 @@
         tournaments, gaming events, and other updates from the Toxic Team.
       </p>
 
-      <button class="glow-on-hover capitalize">Join the toxic Community</button>
+      <button
+        class="glow-on-hover capitalize py-4 px-8 max-w-[200px] text-center"
+      >
+        Join the toxic Community
+      </button>
     </div>
   </section>
 </template>
