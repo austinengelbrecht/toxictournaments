@@ -1,5 +1,8 @@
 <template>
-  <section id="signup" class="">
+  <section
+    id="signup"
+    class="flex flex-row flex-wrap justify-center content-center mt-[10rem] bg-onyx-1 max-w-[1000px] p-8 mx-auto my-0 rounded-2xl"
+  >
     <ClassicController class="w-[250px] h-[250px]" />
 
     <div class="max-w-[600px]">
@@ -10,9 +13,9 @@
         our mailing list to stay informed and up-to-date about upcoming
         tournaments, gaming events, and other updates from the Toxic Team.
       </p>
-    </div>
 
-    <button class="glow-on-hover capitalize">Join the toxic Community</button>
+      <button class="glow-on-hover capitalize">Join the toxic Community</button>
+    </div>
   </section>
 </template>
 
