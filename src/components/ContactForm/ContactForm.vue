@@ -1,5 +1,5 @@
 <template>
-  <div class="modal">
+  <div class="modal" @click="$emit('closeForm')">
     <form
       @submit.prevent="submitEmail"
       class="modal-content flex flex-col flex-nowrap gap-4 bg-onyx-1"
@@ -17,7 +17,7 @@
       />
 
       <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
-        Join The Toxic Community
+        Submit
       </button>
     </form>
   </div>
@@ -27,6 +27,7 @@
 import { supabase } from "@/supabase";
 
 export default {
+  emits: ["closeForm"],
   data() {
     return {
       userEmail: "",

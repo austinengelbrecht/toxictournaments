@@ -23,7 +23,7 @@
     </div>
   </section>
 
-  <ContactForm v-if="formOpen" />
+  <ContactForm v-if="formOpen" @close-form="closeForm()" />
 </template>
 
 <script>
@@ -40,6 +40,9 @@ export default {
   methods: {
     openForm() {
       this.formOpen = true;
+    },
+    closeForm() {
+      this.formOpen = false;
     },
   },
 };
