@@ -1,33 +1,54 @@
 <template>
-  <div class="modal" @click="$emit('closeForm')">
-    <form
-      @submit.prevent="submitEmail"
-      class="modal-content flex flex-col flex-nowrap gap-4 bg-onyx-1"
-    >
-      <label for="newsletter-signup" class="capitalize font-bold text-xl">
-        Enter Email Address
-      </label>
-      <input
-        class="p-4 rounded-lg text-black text-lg"
-        type="email"
-        name="News Letter Signup"
-        id="newsletter-signup"
-        placeholder="Enter Email Address"
-        v-model="userEmail"
-      />
+  <div class="modal">
+    <div class="bg-onyx-1 modal-content p-4">
+      <span @click="$emit('closeForm')">
+        <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
+      </span>
 
-      <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
-        Submit
-      </button>
-    </form>
+      <form @submit.prevent="submitEmail" class="">
+        <div class="">
+          <label for="name"> What's Your Name? </label>
+          <input type="text" name="" id="name" />
+        </div>
+
+        <div>
+          <label for="email" class=""> What's your email? </label>
+          <input
+            class=""
+            type="email"
+            name="News Letter Signup"
+            id="email"
+            placeholder="Enter Email Address"
+            v-model="userEmail"
+          />
+        </div>
+
+        <div>
+          <label for="gammer-tag">What's your gammer tag?</label>
+          <input type="text" name="" id="gammer-tag" />
+        </div>
+
+        <div>
+          <button type="button" @click="$emit('closeForm')">Cancel</button
+          ><button
+            type="submit"
+            class="glow-on-hover p-4 w-[200px] text-center"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 
 <script>
 import { supabase } from "@/supabase";
+import { Icon } from "@iconify/vue";
 
 export default {
   emits: ["closeForm"],
+  components: { Icon },
   data() {
     return {
       userEmail: "",
@@ -40,7 +61,6 @@ export default {
     async submitEmail() {
       let currentDate = new Date().toJSON().slice(0, 10);
       console.log(currentDate);
-
       await supabase.from("Email Newsletter Subscription").insert([
         {
           email: this.userEmail,
