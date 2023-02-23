@@ -16,20 +16,31 @@
 
       <button
         class="glow-on-hover capitalize py-4 px-8 max-w-[200px] text-center self-end"
+        @click="openForm()"
       >
         Join the toxic Community
       </button>
     </div>
   </section>
+
+  <ContactForm v-if="formOpen" />
 </template>
 
 <script>
 import ClassicController from "@/assets/icons/classiccontroller.vue";
+import ContactForm from "./ContactForm.vue";
 
 export default {
-  components: { ClassicController },
+  components: { ClassicController, ContactForm },
   data() {
-    return {};
+    return {
+      formOpen: false,
+    };
+  },
+  methods: {
+    openForm() {
+      this.formOpen = true;
+    },
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <script setup>
-import TheContactBanner from "../components/ContactForm/TheContactBanner.vue";
+import ContactBanner from "../components/ContactForm/ContactBanner.vue";
 import IntroHero from "../components/IntroHero/IntroHero.vue";
 import TheLatestVideos from "../components/LatestVideos/TheLatestVideos.vue";
 import TheFollowUs from "../components/TheFollowUs.vue";
@@ -10,6 +10,6 @@ import TheFollowUs from "../components/TheFollowUs.vue";
     <IntroHero />
     <TheFollowUs />
     <TheLatestVideos />
-    <TheContactBanner />
+    <ContactBanner />
   </main>
 </template>
