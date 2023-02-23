@@ -9,7 +9,7 @@
       <form @submit.prevent="submitEmail" class="">
         <div class="">
           <label for="name"> What's Your Name? </label>
-          <input type="text" name="" id="name" />
+          <input type="text" name="" id="name" v-model="userName" />
         </div>
 
         <div>
@@ -17,7 +17,7 @@
           <input
             class=""
             type="email"
-            name="News Letter Signup"
+            name=""
             id="email"
             placeholder="Enter Email Address"
             v-model="userEmail"
@@ -26,7 +26,7 @@
 
         <div>
           <label for="gammer-tag">What's your gammer tag?</label>
-          <input type="text" name="" id="gammer-tag" />
+          <input type="text" name="" id="gammer-tag" v-model="userGameTag" />
         </div>
 
         <div>
@@ -54,7 +54,7 @@ export default {
     return {
       userEmail: "",
       userName: "",
-      userGammerTag: "",
+      userGameTag: "",
       isSubmitted: false,
     };
   },
@@ -66,7 +66,7 @@ export default {
         {
           email: this.userEmail,
           name: this.userName,
-          gammer_tag: this.userGammerTag,
+          game_tag: this.userGameTag,
           created_at: currentDate,
         },
       ]);
