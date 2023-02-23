@@ -1,21 +1,26 @@
 <template>
-  <form @submit.prevent="submitEmail" class="flex flex-col flex-nowrap gap-4">
-    <label for="newsletter-signup" class="capitalize font-bold text-xl">
-      Enter Email Address
-    </label>
-    <input
-      class="p-4 rounded-lg text-black text-lg"
-      type="email"
-      name="News Letter Signup"
-      id="newsletter-signup"
-      placeholder="Enter Email Address"
-      v-model="userEmail"
-    />
+  <div class="modal">
+    <form
+      @submit.prevent="submitEmail"
+      class="modal-content flex flex-col flex-nowrap gap-4 bg-onyx-1"
+    >
+      <label for="newsletter-signup" class="capitalize font-bold text-xl">
+        Enter Email Address
+      </label>
+      <input
+        class="p-4 rounded-lg text-black text-lg"
+        type="email"
+        name="News Letter Signup"
+        id="newsletter-signup"
+        placeholder="Enter Email Address"
+        v-model="userEmail"
+      />
 
-    <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
-      Join The Toxic Community
-    </button>
-  </form>
+      <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
+        Join The Toxic Community
+      </button>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -43,4 +48,33 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/styles/partials/glow-on-hover";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  background-color: rgb(0, 0, 0, 0.85);
+
+  &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+
+    cursor: pointer;
+  }
+}
+
+.modal-content {
+  margin: 0 auto;
+  padding: 1rem;
+
+  height: 600px;
+  max-width: 600px;
+}
 </style>
