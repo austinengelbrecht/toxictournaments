@@ -1,4 +1,5 @@
 <template>
+  <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
     <div class="bg-onyx-1 modal-content p-4">
       <span @click="$emit('closeForm')">
