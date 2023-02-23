@@ -31,6 +31,8 @@ export default {
   data() {
     return {
       userEmail: "",
+      userName: "",
+      userGammerTag: "",
       isSubmitted: false,
     };
   },
@@ -39,9 +41,14 @@ export default {
       let currentDate = new Date().toJSON().slice(0, 10);
       console.log(currentDate);
 
-      await supabase
-        .from("Email Newsletter Subscription")
-        .insert([{ email: this.userEmail, created_at: currentDate }]);
+      await supabase.from("Email Newsletter Subscription").insert([
+        {
+          email: this.userEmail,
+          name: this.userName,
+          gammer_tag: this.userGammerTag,
+          created_at: currentDate,
+        },
+      ]);
     },
   },
 };
