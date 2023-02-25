@@ -27,9 +27,6 @@
 </template>
 
 <script>
-import { ContactStore } from "./ContactStore";
-const contactStore = ContactStore();
-
 import ClassicController from "@/assets/icons/classiccontroller.vue";
 import ContactForm from "./ContactForm.vue";
 
@@ -42,7 +39,7 @@ export default {
   },
   methods: {
     openForm() {
-      contactStore.formOpen();
+      this.form = true;
     },
     closeForm() {
       this.formOpen = false;
