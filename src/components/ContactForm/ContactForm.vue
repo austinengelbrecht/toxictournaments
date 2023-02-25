@@ -2,14 +2,17 @@
   <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
     <div class="bg-onyx-1 modal-content p-4">
-      <span @click="$emit('closeForm')">
+      <span @click="$emit('closeForm')" class="">
         <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
       </span>
 
-      <form @submit.prevent="submitEmail" class="">
-        <div class="">
+      <h2 class="capitalize">Tell Us a little about yourself?</h2>
+
+      <form @submit.prevent="submitEmail" class="flex flex-col gap-8">
+        <div class="flex flex-col">
           <label for="name"> What's Your Name? </label>
           <input
+            class="px-4 py-2"
             type="text"
             name=""
             id="name"
@@ -18,10 +21,10 @@
           />
         </div>
 
-        <div>
+        <div class="flex flex-col">
           <label for="email" class=""> What's your email? </label>
           <input
-            class=""
+            class="px-4 py-2"
             type="email"
             name=""
             id="email"
@@ -30,9 +33,10 @@
           />
         </div>
 
-        <div>
+        <div class="flex flex-col">
           <label for="gammer-tag">What's your gammer tag?</label>
           <input
+            class="px-4 py-2"
             type="text"
             name=""
             id="gammer-tag"
