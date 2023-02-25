@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-export const useAlertStore = defineStore("signedup", {
+export const useStore = defineStore("signup", {
   state: () => {
     return {
       signedUp: false,
