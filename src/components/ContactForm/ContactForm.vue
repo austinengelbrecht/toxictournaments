@@ -1,33 +1,27 @@
 <template>
   <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
-    <div class="bg-onyx-1 modal-content p-4">
+    <div class="bg-onyx-1 modal-content p-4 rounded-2xl">
       <span @click="$emit('closeForm')">
         <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
       </span>
 
-      <form @submit.prevent="submitEmail" class="">
-        <div class="">
-          <label for="name"> What's Your Name? </label>
-          <input type="text" name="" id="name" v-model="userName" />
-        </div>
+      <form @submit.prevent="submitEmail" class="flex flex-col gap-4">
+        <label for="name"> What's Your Name? </label>
+        <input type="text" name="" id="name" v-model="userName" />
 
-        <div>
-          <label for="email" class=""> What's your email? </label>
-          <input
-            class=""
-            type="email"
-            name=""
-            id="email"
-            placeholder="Enter Email Address"
-            v-model="userEmail"
-          />
-        </div>
+        <label for="email" class=""> What's your email? </label>
+        <input
+          class=""
+          type="email"
+          name=""
+          id="email"
+          placeholder="Enter Email Address"
+          v-model="userEmail"
+        />
 
-        <div>
-          <label for="gammer-tag">What's your gammer tag?</label>
-          <input type="text" name="" id="gammer-tag" v-model="userGameTag" />
-        </div>
+        <label for="gammer-tag">What's your gammer tag?</label>
+        <input type="text" name="" id="gammer-tag" v-model="userGameTag" />
 
         <div>
           <button type="button" @click="$emit('closeForm')">Cancel</button
