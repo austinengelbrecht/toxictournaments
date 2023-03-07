@@ -35,9 +35,9 @@
         and our next events.
       </p>
     </div>
-  </section>
 
-  <ContactForm v-if="modalOpen" />
+    <ContactForm v-if="modalOpen" />
+  </section>
 </template>
 
 <script>

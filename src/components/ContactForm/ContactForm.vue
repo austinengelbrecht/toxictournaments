@@ -1,57 +1,62 @@
 <template>
   <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
-    <div class="bg-onyx-1 modal-content p-4">
-      <span @click="closeModal" class="">
-        <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
-      </span>
+    <div class="modal-content">
+      <div class="bg-onyx-1 p-8 rounded-2xl">
+        <span @click="closeModal" class="justify-self-right">
+          <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
+        </span>
 
-      <h2 class="capitalize">Tell Us a little about yourself?</h2>
+        <h2 class="capitalize text-3xl">Tell Us a little about yourself?</h2>
 
-      <form @submit.prevent="registerEmail" class="flex flex-col gap-8">
-        <div class="flex flex-col">
-          <label for="name"> What's Your Name? </label>
-          <input
-            class="px-4 py-2"
-            type="text"
-            name=""
-            id="name"
-            v-model="userName"
-            placeholder="Enter Your Name"
-          />
-        </div>
+        <form @submit.prevent="registerEmail" class="flex flex-col gap-8">
+          <div class="flex flex-col">
+            <label for="name"> What's Your Name? </label>
+            <input
+              class="px-4 py-2"
+              type="text"
+              name=""
+              id="name"
+              v-model="userName"
+              placeholder="Enter Your Name"
+            />
+          </div>
 
-        <div class="flex flex-col">
-          <label for="email" class=""> What's your email? </label>
-          <input
-            class="px-4 py-2"
-            type="email"
-            name=""
-            id="email"
-            placeholder="Enter Your Email Address"
-            v-model="userEmail"
-          />
-        </div>
+          <div class="flex flex-col">
+            <label for="email" class=""> What's your email? </label>
+            <input
+              class="px-4 py-2"
+              type="email"
+              name=""
+              id="email"
+              placeholder="Enter Your Email Address"
+              v-model="userEmail"
+            />
+          </div>
 
-        <div class="flex flex-col">
-          <label for="gammer-tag">What's your gammer tag?</label>
-          <input
-            class="px-4 py-2"
-            type="text"
-            name=""
-            id="gammer-tag"
-            v-model="userGameTag"
-            placeholder="Enter Your Gammer Tag"
-          />
-        </div>
+          <div class="flex flex-col">
+            <label for="gammer-tag">What's your gammer tag?</label>
+            <input
+              class="px-4 py-2"
+              type="text"
+              name=""
+              id="gammer-tag"
+              v-model="userGameTag"
+              placeholder="Enter Your Gammer Tag"
+            />
+          </div>
 
-        <div>
-          <!-- <button type="button" @click="">Cancel</button> -->
-          <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
-            Submit
-          </button>
-        </div>
-      </form>
+          <div>
+            <!-- <button type="button" @click="">Cancel</button> -->
+            <button
+              type="submit"
+              class="glow-on-hover p-4 w-[200px] text-center"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -113,22 +118,17 @@ export default {
   z-index: 1;
 
   background-color: rgb(0, 0, 0, 0.85);
-
-  &-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-
-    cursor: pointer;
-  }
 }
 
 .modal-content {
-  margin: 0 auto;
-  padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 
-  height: 600px;
-  max-width: 600px;
+  margin: 0 auto;
+
+  height: 100%;
+  max-width: 500px;
 }
 </style>
