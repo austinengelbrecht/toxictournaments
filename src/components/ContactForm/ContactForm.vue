@@ -61,7 +61,7 @@ import { Icon } from "@iconify/vue";
 import { supabase } from "@/supabase";
 
 import { useEmailStore } from "../../store/email";
-import { mapActions, mapState } from "pinia";
+import { mapActions } from "pinia";
 
 export default {
   components: { Icon },
@@ -78,7 +78,6 @@ export default {
 
     async registerEmail() {
       let currentDate = new Date().toJSON().slice(0, 10);
-      //console.log(currentDate);
 
       await supabase
         .from("Email Newsletter Subscription")
