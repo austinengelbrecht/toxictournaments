@@ -2,8 +2,8 @@
   <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
     <div class="modal-content">
-      <div class="bg-onyx-1 p-8 rounded-2xl">
-        <span @click="closeModal" class="justify-self-right">
+      <div class="bg-onyx-1 p-8 rounded-2xl flex flex-col">
+        <span @click="closeModal" class="">
           <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
         </span>
 
@@ -13,7 +13,7 @@
           <div class="flex flex-col">
             <label for="name"> What's Your Name? </label>
             <input
-              class="px-4 py-2"
+              class="px-4 py-2 text-black"
               type="text"
               name=""
               id="name"
@@ -25,7 +25,7 @@
           <div class="flex flex-col">
             <label for="email" class=""> What's your email? </label>
             <input
-              class="px-4 py-2"
+              class="px-4 py-2 text-black"
               type="email"
               name=""
               id="email"
@@ -37,7 +37,7 @@
           <div class="flex flex-col">
             <label for="gammer-tag">What's your gammer tag?</label>
             <input
-              class="px-4 py-2"
+              class="px-4 py-2 text-black"
               type="text"
               name=""
               id="gammer-tag"
