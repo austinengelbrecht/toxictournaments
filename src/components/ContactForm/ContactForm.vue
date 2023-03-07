@@ -3,27 +3,11 @@
   <div class="modal">
     <div class="modal-content">
       <div class="bg-onyx-1 p-8 rounded-2xl flex flex-col gap-8">
-        <span @click="closeModal" class="self-end">
-          <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
-        </span>
-
         <h2 class="capitalize text-4xl">Tell Us a little about yourself?</h2>
 
         <form @submit.prevent="registerEmail" class="flex flex-col gap-8">
           <div class="flex flex-col">
-            <label for="name"> What's Your Name? </label>
-            <input
-              class="px-4 py-2 text-black"
-              type="text"
-              name=""
-              id="name"
-              v-model="userName"
-              placeholder="Enter Your Name"
-            />
-          </div>
-
-          <div class="flex flex-col">
-            <label for="email" class=""> What's your email? </label>
+            <label for="email" class=""> What's your email? (Required)</label>
             <input
               class="px-4 py-2 text-black"
               type="email"
@@ -35,7 +19,19 @@
           </div>
 
           <div class="flex flex-col">
-            <label for="gammer-tag">What's your gammer tag?</label>
+            <label for="name"> What's Your Name? (Optional)</label>
+            <input
+              class="px-4 py-2 text-black"
+              type="text"
+              name=""
+              id="name"
+              v-model="userName"
+              placeholder="Enter Your Name"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label for="gammer-tag">What's your gammer tag? (Optional)</label>
             <input
               class="px-4 py-2 text-black"
               type="text"
@@ -43,11 +39,12 @@
               id="gammer-tag"
               v-model="userGameTag"
               placeholder="Enter Your Gammer Tag"
+              required
             />
           </div>
 
-          <div>
-            <!-- <button type="button" @click="">Cancel</button> -->
+          <div class="flex flex-row justify-end gap-4">
+            <button @click="closeModal">Cancel</button>
             <button
               type="submit"
               class="glow-on-hover p-4 w-[200px] text-center"
