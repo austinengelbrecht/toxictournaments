@@ -78,6 +78,8 @@ export default {
     };
   },
   methods: {
+    ...mapActions(useEmailStore, ["closeModal", "signUpUser"]),
+
     async registerEmail() {
       let currentDate = new Date().toJSON().slice(0, 10);
       //console.log(currentDate);
@@ -94,12 +96,9 @@ export default {
         ])
         .then((returns) => {
           console.log("returned: ", returns);
-          this.signUpUser();
         })
         .catch(console.error());
     },
-
-    ...mapActions(useEmailStore, ["closeModal", "signUpUser"]),
   },
 };
 </script>
