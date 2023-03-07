@@ -2,12 +2,12 @@
   <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
     <div class="modal-content">
-      <div class="bg-onyx-1 p-8 rounded-2xl flex flex-col">
-        <span @click="closeModal" class="">
+      <div class="bg-onyx-1 p-8 rounded-2xl flex flex-col gap-8">
+        <span @click="closeModal" class="self-end">
           <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
         </span>
 
-        <h2 class="capitalize text-3xl">Tell Us a little about yourself?</h2>
+        <h2 class="capitalize text-4xl">Tell Us a little about yourself?</h2>
 
         <form @submit.prevent="registerEmail" class="flex flex-col gap-8">
           <div class="flex flex-col">
@@ -129,6 +129,6 @@ export default {
   margin: 0 auto;
 
   height: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 </style>
