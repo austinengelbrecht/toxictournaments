@@ -59,14 +59,12 @@
 </template>
 
 <script>
-import { Icon } from "@iconify/vue";
 import { supabase } from "@/supabase";
 
 import { useEmailStore } from "../../store/email";
 import { mapActions } from "pinia";
 
 export default {
-  components: { Icon },
   data() {
     return {
       userEmail: "",
