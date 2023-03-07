@@ -37,7 +37,7 @@
     </div>
   </section>
 
-  <ContactForm v-if="modalOpen" @close-form="closeForm()" />
+  <ContactForm v-if="modalOpen" />
 </template>
 
 <script>
