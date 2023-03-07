@@ -16,34 +16,33 @@
 
       <button
         class="glow-on-hover capitalize py-4 px-8 max-w-[200px] text-center self-end"
-        @click="openForm()"
+        @click="openModal"
       >
         Join the toxic Community
       </button>
     </div>
   </section>
 
-  <ContactForm v-if="formOpen" @close-form="closeForm()" />
+  <ContactForm v-if="modalOpen" @close-form="closeForm()" />
 </template>
 
 <script>
 import ClassicController from "@/assets/icons/classiccontroller.vue";
 import ContactForm from "./ContactForm.vue";
 
+import { useEmailStore } from "../../store/email";
+import { mapState, mapActions } from "pinia";
+
 export default {
   components: { ClassicController, ContactForm },
   data() {
-    return {
-      formOpen: false,
-    };
+    return {};
   },
   methods: {
-    openForm() {
-      this.form = true;
-    },
-    closeForm() {
-      this.formOpen = false;
-    },
+    ...mapActions(useEmailStore, ["openModal"]),
+  },
+  computed: {
+    ...mapState(useEmailStore, ["modalOpen"]),
   },
 };
 </script>
