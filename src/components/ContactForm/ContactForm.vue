@@ -46,9 +46,10 @@
         </div>
 
         <div>
-          <button type="button" @click="registerEmail">Cancel</button
-          ><button
+          <!-- <button type="button" @click="">Cancel</button> -->
+          <button
             type="submit"
+            @click="registerEmail()"
             class="glow-on-hover p-4 w-[200px] text-center"
           >
             Submit
@@ -61,12 +62,12 @@
 
 <script>
 import { Icon } from "@iconify/vue";
+import { supabase } from "@/supabase";
 
 import { useEmailStore } from "../../store/email";
 import { mapActions } from "pinia";
 
 export default {
-  emits: ["closeForm"],
   components: { Icon },
   data() {
     return {
@@ -77,7 +78,28 @@ export default {
     };
   },
   methods: {
-    ...mapActions(useEmailStore, ["registerEmail", "closeModal"]),
+    async registerEmail() {
+      let currentDate = new Date().toJSON().slice(0, 10);
+      //console.log(currentDate);
+
+      await supabase
+        .from("Email Newsletter Subscription")
+        .insert([
+          {
+            email: this.userEmail,
+            name: this.userName,
+            game_tag: this.userGameTag,
+            created_at: currentDate,
+          },
+        ])
+        .then((returns) => {
+          console.log("returned: ", returns);
+          this.signUpUser();
+        })
+        .catch(console.error());
+    },
+
+    ...mapActions(useEmailStore, ["closeModal", "signUpUser"]),
   },
 };
 </script>
