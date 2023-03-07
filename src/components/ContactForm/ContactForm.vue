@@ -8,7 +8,7 @@
 
       <h2 class="capitalize">Tell Us a little about yourself?</h2>
 
-      <form @submit.prevent="submitEmail" class="flex flex-col gap-8">
+      <form @submit.prevent="registerEmail" class="flex flex-col gap-8">
         <div class="flex flex-col">
           <label for="name"> What's Your Name? </label>
           <input
@@ -47,11 +47,7 @@
 
         <div>
           <!-- <button type="button" @click="">Cancel</button> -->
-          <button
-            type="submit"
-            @click="registerEmail()"
-            class="glow-on-hover p-4 w-[200px] text-center"
-          >
+          <button type="submit" class="glow-on-hover p-4 w-[200px] text-center">
             Submit
           </button>
         </div>
@@ -65,7 +61,7 @@ import { Icon } from "@iconify/vue";
 import { supabase } from "@/supabase";
 
 import { useEmailStore } from "../../store/email";
-import { mapActions } from "pinia";
+import { mapActions, mapState } from "pinia";
 
 export default {
   components: { Icon },
@@ -96,6 +92,8 @@ export default {
         ])
         .then((returns) => {
           console.log("returned: ", returns);
+          this.signUpUser();
+          this.closeModal();
         })
         .catch(console.error());
     },

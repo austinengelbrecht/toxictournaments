@@ -5,7 +5,10 @@
   >
     <ClassicController class="w-[250px] h-[250px]" />
 
-    <div class="max-w-[600px] flex flex-col flex-nowrap gap-4">
+    <div
+      class="max-w-[600px] flex flex-col flex-nowrap gap-4"
+      v-if="!isSignedUp"
+    >
       <h2 class="text-6xl">Want to game with us?</h2>
 
       <p>
@@ -20,6 +23,17 @@
       >
         Join the toxic Community
       </button>
+    </div>
+
+    <div
+      v-if="isSignedUp"
+      class="max-w-[600px] flex flex-col flex-nowrap gap-4"
+    >
+      <h2 class="text-6xl">Thanks for signing up!</h2>
+      <p>
+        We are excited to game with you! Keep an eye on your email for updates
+        and our next events.
+      </p>
     </div>
   </section>
 
@@ -42,7 +56,7 @@ export default {
     ...mapActions(useEmailStore, ["openModal"]),
   },
   computed: {
-    ...mapState(useEmailStore, ["modalOpen"]),
+    ...mapState(useEmailStore, ["modalOpen", "isSignedUp"]),
   },
 };
 </script>
