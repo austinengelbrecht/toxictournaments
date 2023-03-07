@@ -2,7 +2,7 @@
   <!-- todo - how to add event for closing the modal to background only -->
   <div class="modal">
     <div class="bg-onyx-1 modal-content p-4">
-      <span @click="$emit('closeForm')" class="">
+      <span @click="closeModal" class="">
         <Icon icon="fa6-regular:circle-xmark" color="white" width="32" />
       </span>
 
@@ -46,7 +46,7 @@
         </div>
 
         <div>
-          <button type="button" @click="$emit('closeForm')">Cancel</button
+          <button type="button" @click="registerEmail">Cancel</button
           ><button
             type="submit"
             class="glow-on-hover p-4 w-[200px] text-center"
@@ -60,8 +60,10 @@
 </template>
 
 <script>
-import { supabase } from "@/supabase";
 import { Icon } from "@iconify/vue";
+
+import { useEmailStore } from "../../store/email";
+import { mapActions } from "pinia";
 
 export default {
   emits: ["closeForm"],
@@ -75,18 +77,7 @@ export default {
     };
   },
   methods: {
-    async submitEmail() {
-      let currentDate = new Date().toJSON().slice(0, 10);
-      console.log(currentDate);
-      await supabase.from("Email Newsletter Subscription").insert([
-        {
-          email: this.userEmail,
-          name: this.userName,
-          game_tag: this.userGameTag,
-          created_at: currentDate,
-        },
-      ]);
-    },
+    ...mapActions(useEmailStore, ["registerEmail", "closeModal"]),
   },
 };
 </script>
