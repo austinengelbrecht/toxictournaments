@@ -31,6 +31,10 @@
     >
       <h2 class="text-6xl">Thanks for signing up!</h2>
       <p>
+        Thanks a ton for signing up! We're stoked to have you join our community
+        and can't wait to share some awesome updates with you.
+      </p>
+      <p>
         We are excited to game with you! Keep an eye on your email for updates
         and our next events.
       </p>
