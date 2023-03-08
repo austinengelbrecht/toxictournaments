@@ -89,8 +89,7 @@ export default {
             created_at: currentDate,
           },
         ])
-        .then((returns) => {
-          console.log("returned: ", returns);
+        .then(() => {
           this.signUpUser();
           this.closeModal();
         })
