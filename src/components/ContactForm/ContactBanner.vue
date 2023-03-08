@@ -3,7 +3,7 @@
     id="signup"
     class="flex flex-row flex-wrap justify-center gap-8 content-center mt-[10rem] bg-onyx-1 max-w-[1000px] p-8 mx-auto my-0 rounded-2xl"
   >
-    <ClassicController class="w-[250px] h-[250px]" />
+    <Controller class="w-[250px] h-[250px]" />
 
     <div
       class="max-w-[600px] flex flex-col flex-nowrap gap-4"
@@ -41,14 +41,14 @@
 </template>
 
 <script>
-import ClassicController from "@/assets/icons/classiccontroller.vue";
+import Controller from "@/assets/images/controller_icon/ControllerIcon.vue";
 import ContactForm from "./ContactForm.vue";
 
 import { useEmailStore } from "../../store/email";
 import { mapState, mapActions } from "pinia";
 
 export default {
-  components: { ClassicController, ContactForm },
+  components: { Controller, ContactForm },
   data() {
     return {};
   },
