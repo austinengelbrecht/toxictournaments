@@ -1,6 +1,6 @@
 <template>
   <img
-    src="./controller.png"
+    src="./controller.webp"
     alt="Controller wasting away in toxicity"
     aria-hidden="true"
     height="419"
