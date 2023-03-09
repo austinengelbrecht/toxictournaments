@@ -47,7 +47,7 @@
             <button @click="closeModal">Cancel</button>
             <button
               type="submit"
-              id="email-newsletter-submit"
+              id="email_newsletter_submit"
               class="glow-on-hover p-4 w-[200px] text-center"
             >
               Submit
