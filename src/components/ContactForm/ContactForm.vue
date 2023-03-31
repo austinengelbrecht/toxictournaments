@@ -5,7 +5,7 @@
       <div class="bg-onyx-1 p-8 rounded-2xl flex flex-col gap-8">
         <h2 class="capitalize text-4xl">Tell Us a little about yourself?</h2>
 
-        <form @submit.prevent="registerEmail" class="flex flex-col gap-8">
+        <form @submit.prevent="subscribe()" class="flex flex-col gap-8">
           <div class="flex flex-col">
             <label for="email" class=""> What's your email? (Required)</label>
             <input
@@ -60,8 +60,7 @@
 </template>
 
 <script>
-import { supabase } from "@/supabase";
-
+import axios from "axios";
 import { useEmailStore } from "../../store/email";
 import { mapActions } from "pinia";
 
@@ -77,24 +76,23 @@ export default {
   methods: {
     ...mapActions(useEmailStore, ["closeModal", "signUpUser"]),
 
-    async registerEmail() {
-      let currentDate = new Date().toJSON().slice(0, 10);
-
-      await supabase
-        .from("Email Newsletter Subscription")
-        .insert([
+    subscribe() {
+      axios
+        .post(
+          "https://toxic-tournaments-default-rtdb.firebaseio.com/subscribe.json",
           {
             email: this.userEmail,
-            name: this.userName,
-            game_tag: this.userGameTag,
-            created_at: currentDate,
-          },
-        ])
+            username: this.userName,
+            gametag: this.userGameTag,
+          }
+        )
         .then(() => {
           this.signUpUser();
           this.closeModal();
         })
-        .catch(console.error());
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 };
