@@ -7,8 +7,8 @@
       alt="Outbreak 2023 Logo"
       loading="lazy"
       aria-hidden="true"
-      height="100"
-      width="100"
+      height="80"
+      width="80"
     />
 
     <span class="text-center">
