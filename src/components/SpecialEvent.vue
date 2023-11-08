@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex mx-auto my-0 gap-4 items-center justify-center mt-12 p-4 bg-onyx-1"
+    class="flex mx-auto my-0 gap-4 items-center justify-center mt-12 p-4 bg-onyx-1 flex-wrap"
   >
     <img
       src="/OutbreakLogo.png"
@@ -11,16 +11,15 @@
       width="100"
     />
 
-    <div class="flex flex-col gap-4">
-      We are currently hosting a special event! Join the Outbreak Event!
-      <a
-        href="http://34.71.9.100/"
-        rel="nofollow"
-        target="_blank"
-        class="button text-center self-start"
-        >Learn More</a
-      >
-    </div>
+    We are currently hosting a special event! Join the Outbreak Event!
+
+    <a
+      href="http://34.71.9.100/"
+      rel="nofollow"
+      target="_blank"
+      class="button text-center"
+      >Learn More</a
+    >
   </section>
 </template>
 
@@ -31,15 +30,14 @@ export default {};
 <style lang="scss" scoped>
 .button {
   padding: 0.5rem 1rem;
-  border: black 4px solid;
   border-radius: 0.25rem;
-  background-color: #e21313;
-  color: black;
-  transition: background-color 0.3s ease-in-out;
+  background-color: $onyx-3;
+  transition: all 0.25s ease-in-out;
 
   &:hover,
   &:focus {
-    background-color: $toxic-3;
+    background-color: $onyx-2;
+    transform: translateY(-2px);
   }
 }
 </style>
