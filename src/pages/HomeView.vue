@@ -1,6 +1,7 @@
 <script setup>
 import IntroHero from "../components/IntroHero/IntroHero.vue";
 import TheFollowUs from "../components/TheFollowUs.vue";
+import SpecialEvent from "../components/SpecialEvent.vue";
 
 import { defineAsyncComponent } from "vue";
 
@@ -16,6 +17,7 @@ const ContactBanner = defineAsyncComponent(() =>
 <template>
   <IntroHero />
   <TheFollowUs />
+  <SpecialEvent />
   <TheLatestVideos />
   <ContactBanner />
 </template>
