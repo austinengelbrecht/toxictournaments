@@ -5,19 +5,19 @@
       <h1 class="home-title text-3xl">Toxic Tournaments</h1>
     </router-link>
   </div>
+  <SpecialEvent v-if="eventCheck" />
 </template>
 
-<script>
+<script setup>
 import ToxicLogo from "@/assets/icons/ToxicLogo.vue";
+import SpecialEvent from "./SpecialEvent.vue";
 
-export default {
-  components: {
-    ToxicLogo,
-  },
-  data() {
-    return {};
-  },
-};
+const currentDate = new Date();
+const currentDay = currentDate.getDate();
+const currentMonth = currentDate.getMonth();
+const currentYear = currentDate.getFullYear();
+const eventCheck =
+  currentYear === 2023 && currentMonth === 10 && currentDay <= 19;
 </script>
 
 <style lang="scss" scoped>

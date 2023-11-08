@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex mx-auto my-0 gap-4 items-center justify-center mt-12 p-4 bg-onyx-1 flex-wrap"
+    class="flex mx-auto my-0 gap-4 items-center justify-center px-4 py-1 bg-onyx-1 flex-wrap"
   >
     <img
       src="/OutbreakLogo.png"
@@ -11,7 +11,9 @@
       width="100"
     />
 
-    We are currently hosting a special event! Join the Outbreak Event!
+    <span class="text-center">
+      We are currently hosting a special event! Join the Outbreak Event!
+    </span>
 
     <a
       href="http://34.71.9.100/"
@@ -22,10 +24,6 @@
     >
   </section>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss" scoped>
 .button {
