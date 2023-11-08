@@ -16,6 +16,7 @@ const ContactBanner = defineAsyncComponent(() =>
 <template>
   <IntroHero />
   <TheFollowUs />
+
   <TheLatestVideos />
   <ContactBanner />
 </template>
