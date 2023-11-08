@@ -12,12 +12,20 @@ const TheLatestVideos = defineAsyncComponent(() =>
 const ContactBanner = defineAsyncComponent(() =>
   import("../components/ContactForm/ContactBanner.vue")
 );
+
+const currentDate = new Date();
+const currentDay = currentDate.getDate();
+const currentMonth = currentDate.getMonth();
+const currentYear = currentDate.getFullYear();
+
+const eventCheck =
+  currentYear === 2023 && currentMonth === 10 && currentDay <= 19;
 </script>
 
 <template>
   <IntroHero />
   <TheFollowUs />
-  <SpecialEvent />
+  <SpecialEvent v-if="eventCheck" />
   <TheLatestVideos />
   <ContactBanner />
 </template>
